@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
+  m_Name: Test 2
+  m_EditorClassIdentifier: 
+  typeNotification: 0
+  messageNotification: Teste 2
+  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+    type: 3}
+  changeStatusFirstOption:
+  - typeNotification: 0
+    value: 6
+  - typeNotification: 1
+    value: -10
+  - typeNotification: 2
+    value: 5
+  - typeNotification: 3
+    value: -5
+  changeStatusSecondOption:
+  - typeNotification: 0
+    value: -10
+  - typeNotification: 1
+    value: 10
+  - typeNotification: 2
+    value: -5
+  - typeNotification: 3
+    value: 5
