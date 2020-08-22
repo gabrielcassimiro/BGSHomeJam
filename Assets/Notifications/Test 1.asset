@@ -16,6 +16,7 @@ MonoBehaviour:
   messageNotification: Teste 1
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
+  textFirstOption: 
   changeStatusFirstOption:
   - typeNotification: 0
     value: 8
@@ -25,6 +26,7 @@ MonoBehaviour:
     value: 3
   - typeNotification: 3
     value: -5
+  textSecondOption: 
   changeStatusSecondOption:
   - typeNotification: 0
     value: -10
@@ -34,3 +36,4 @@ MonoBehaviour:
     value: -5
   - typeNotification: 3
     value: 5
+  repeat: 1

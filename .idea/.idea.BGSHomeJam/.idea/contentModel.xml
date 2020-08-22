@@ -15,8 +15,9 @@
           <e p="MainMenu.cs" t="Include" />
           <e p="NotificationPrefab.cs" t="Include" />
           <e p="Scriptable" t="Include">
-            <e p="Notification.cs" t="Include" />
+            <e p="NotificationObject.cs" t="Include" />
           </e>
+          <e p="StartStatusPanel.cs" t="Include" />
           <e p="Status.cs" t="Include" />
           <e p="StatusManager.cs" t="Include" />
         </e>

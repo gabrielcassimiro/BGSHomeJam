@@ -10,30 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Test 2
+  m_Name: TestStart 1
   m_EditorClassIdentifier: 
   typeNotification: 0
-  messageNotification: Teste 2
+  messageNotification: asdasdasdasd
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
-  textFirstOption: 
+  textFirstOption: zxczxc
   changeStatusFirstOption:
   - typeNotification: 0
-    value: 6
-  - typeNotification: 1
-    value: -10
-  - typeNotification: 2
-    value: 5
-  - typeNotification: 3
-    value: -5
-  textSecondOption: 
-  changeStatusSecondOption:
-  - typeNotification: 0
-    value: -10
-  - typeNotification: 1
     value: 10
+  - typeNotification: 1
+    value: -10
+  textSecondOption: zxczxczxc
+  changeStatusSecondOption:
   - typeNotification: 2
-    value: -5
+    value: 10
   - typeNotification: 3
-    value: 5
-  repeat: 1
+    value: -10

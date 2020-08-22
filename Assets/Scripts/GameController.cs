@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Enums;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class GameController : MonoBehaviour
 {
@@ -44,29 +43,43 @@ public class GameController : MonoBehaviour
         playerStatus.Add(TypeNotification.Social, 50);
     }
 
+    public ListNotifications GetListNotification()
+    {
+        return listNotifications;
+    }
+
     public void ChangeStatus(List<Status> status)
     {
         status.ForEach(stat =>
         {
             playerStatus[stat.typeNotification] += stat.value;
             var fillAmount = playerStatus[stat.typeNotification] / maxPoints;
-            StatusManager.instance.ChangeBar(stat.typeNotification,fillAmount);
+            StatusManager.instance.ChangeBar(stat.typeNotification, fillAmount);
         });
-        StartCoroutine(WaitNewNotification());
     }
 
-    private void NewNotification()
+    public void NewNotification()
     {
-        
         var notification = listNotifications.GetNotification(true);
         var go = Instantiate(notification.notificationPrefab, notificationParent);
         var prefab = go.GetComponent<NotificationPrefab>();
-        prefab.Init(notification);
+        prefab.Init(notification, CallEnumerator);
+    }
+
+    private void CallEnumerator()
+    {
+        StartCoroutine(WaitNewNotification());
     }
 
     private IEnumerator WaitNewNotification()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         NewNotification();
+    }
+
+    public static void GameOver()
+    {
+        Time.timeScale = 0.0f;
+        Debug.Log("Game Over!");
     }
 }

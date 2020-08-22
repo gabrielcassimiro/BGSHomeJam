@@ -66,7 +66,12 @@ public class StatusManager : MonoBehaviour
         if (finalValue > currentValue) target.color = Color.green;
         if (finalValue < currentValue) target.color = Color.red;
         var newValue = Mathf.Lerp(currentValue, finalValue, 25.0f * Time.deltaTime);
-        target.fillAmount = newValue;
+        if (currentValue > 0) target.fillAmount = newValue;
+        else
+        {
+            target.fillAmount = 0;
+            GameController.GameOver();
+        }
         yield return new WaitForSeconds(0.01f);
         if (Math.Abs(currentValue - finalValue) > 0.0001f) StartCoroutine(ChangeValueBar(target, newValue, finalValue));
         else target.color = Color.white;
