@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeNotification: 0
   messageNotification: Sequencia
-  notificationPrefab: {fileID: 0}
+  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+    type: 3}
   textFirstOption: 
   changeStatusFirstOption: []
   sequenceFirstOption: {fileID: 0}
