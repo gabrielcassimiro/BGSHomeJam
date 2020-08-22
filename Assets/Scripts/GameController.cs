@@ -20,8 +20,8 @@ public class GameController : MonoBehaviour
 
     private Dictionary<TypeNotification, int> playerStatus = new Dictionary<TypeNotification, int>();
     [SerializeField] private float maxPoints = 1000.0f;
-    [SerializeField] private ListNotifications listNotifications;
-    [SerializeField] private Transform notificationParent;
+    [SerializeField] private ListNotifications listNotifications = null;
+    [SerializeField] private Transform notificationParent = null;
 
 
     private void Start()
@@ -30,10 +30,10 @@ public class GameController : MonoBehaviour
         foreach (var value in playerStatus)
         {
             var fillAmount = value.Value / maxPoints;
-            StatusManager.instance.ChangeBar(value.Key, fillAmount);
+            StatusManager.instance.Init(value.Key, fillAmount);
         }
 
-        NewNotification();
+        // NewNotification();
     }
 
     private void InitStatus()
@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour
         {
             playerStatus[stat.typeNotification] += stat.value;
             var fillAmount = playerStatus[stat.typeNotification] / maxPoints;
-            StatusManager.instance.ChangeBar(stat.typeNotification, fillAmount);
+            StatusManager.instance.ChangeBar(stat.typeNotification,fillAmount);
         });
         StartCoroutine(WaitNewNotification());
     }

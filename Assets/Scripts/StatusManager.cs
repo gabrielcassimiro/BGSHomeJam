@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using Enums;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,14 +17,13 @@ public class StatusManager : MonoBehaviour
     }
 
     #endregion
-    
-    [SerializeField] private Image socialBar;
-    [SerializeField] private Image physicalBar;
-    [SerializeField] private Image professionalBar;
-    [SerializeField] private Image mentalBar;
 
+    [SerializeField] private Image socialBar = null;
+    [SerializeField] private Image physicalBar = null;
+    [SerializeField] private Image professionalBar = null;
+    [SerializeField] private Image mentalBar = null;
 
-    public void ChangeBar(TypeNotification typeNotification, float value)
+    public void Init(TypeNotification typeNotification, float value)
     {
         switch (typeNotification)
         {
@@ -42,5 +40,35 @@ public class StatusManager : MonoBehaviour
                 socialBar.fillAmount = value;
                 break;
         }
+    }
+
+    public void ChangeBar(TypeNotification typeNotification, float value)
+    {
+        switch (typeNotification)
+        {
+            case TypeNotification.Mental:
+                StartCoroutine(ChangeValueBar(mentalBar, mentalBar.fillAmount, value));
+                break;
+            case TypeNotification.Physical:
+                StartCoroutine(ChangeValueBar(physicalBar, physicalBar.fillAmount, value));
+                break;
+            case TypeNotification.Professional:
+                StartCoroutine(ChangeValueBar(professionalBar, professionalBar.fillAmount, value));
+                break;
+            case TypeNotification.Social:
+                StartCoroutine(ChangeValueBar(socialBar, socialBar.fillAmount, value));
+                break;
+        }
+    }
+
+    private IEnumerator ChangeValueBar(Image target, float currentValue, float finalValue)
+    {
+        if (finalValue > currentValue) target.color = Color.green;
+        if (finalValue < currentValue) target.color = Color.red;
+        var newValue = Mathf.Lerp(currentValue, finalValue, 25.0f * Time.deltaTime);
+        target.fillAmount = newValue;
+        yield return new WaitForSeconds(0.01f);
+        if (Math.Abs(currentValue - finalValue) > 0.0001f) StartCoroutine(ChangeValueBar(target, newValue, finalValue));
+        else target.color = Color.white;
     }
 }

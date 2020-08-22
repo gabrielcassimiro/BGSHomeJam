@@ -12,6 +12,7 @@
           </e>
           <e p="GameController.cs" t="Include" />
           <e p="ListNotifications.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
           <e p="NotificationPrefab.cs" t="Include" />
           <e p="Scriptable" t="Include">
             <e p="Notification.cs" t="Include" />
