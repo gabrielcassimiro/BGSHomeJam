@@ -24,8 +24,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private Transform notificationParent = null;
 
     [Header("Social Status")]
-    [SerializeField] private bool isDating;
-    [SerializeField] private bool isWorking;
+    public bool isDating = false;
+    public bool isWorking = false;
+    public bool isStudying = false;
 
 
     private void Start()
@@ -67,7 +68,7 @@ public class GameController : MonoBehaviour
     {
         if (!notificationObject)
         {
-            var notification = listNotifications.GetNotification(isDating, isWorking);
+            var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
             var go = Instantiate(notification.notificationPrefab, notificationParent);
             var prefab = go.GetComponent<NotificationPrefab>();
             prefab.Init(notification, CallEnumerator, NewSpecificNotification);

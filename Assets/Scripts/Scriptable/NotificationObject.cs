@@ -8,6 +8,7 @@ namespace Scriptable
     public class NotificationObject : ScriptableObject
     {
         public TypeNotification typeNotification;
+        public string titleNotification;
         public string messageNotification;
         public GameObject notificationPrefab;
         public string textFirstOption;
@@ -17,5 +18,18 @@ namespace Scriptable
         public List<Status> changeStatusSecondOption;
         public NotificationObject sequenceSecondOption;
         public bool repeat;
+
+        [Header("Dating")]
+        public bool affectingDating;
+        public bool datingStatus;
+        [Header("Work")]
+        public bool affectWork;
+        public bool employmentStatus;
+        [Header("Study")]
+        public bool affectsStudies;
+        public bool studiesStatus;
+        [Header("Options Affect")]
+        public bool firstOptionAffect;
+        public bool secondOptionAffect;
     }
 }

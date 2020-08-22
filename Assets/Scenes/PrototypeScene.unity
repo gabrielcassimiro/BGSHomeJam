@@ -1315,9 +1315,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startNotifications:
-  - {fileID: 11400000, guid: 870187d65923d804e89f7a076a4225f3, type: 2}
-  - {fileID: 11400000, guid: 89cdbf039c4295e45acf9f7706bfd206, type: 2}
-  - {fileID: 11400000, guid: 5a89603202c96ac45b2aa208821b4432, type: 2}
+  - {fileID: 11400000, guid: 679444892c188754d8c3229e7d870e59, type: 2}
+  - {fileID: 11400000, guid: 79040ba465e04e340acb8525cc5b6669, type: 2}
+  - {fileID: 11400000, guid: 02019820513842f4c98ec1d747c901bd, type: 2}
+  - {fileID: 11400000, guid: ed8030eaa31893444b019f45eacb3e78, type: 2}
 --- !u!1 &1761793899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,6 +1587,8 @@ MonoBehaviour:
   maxPoints: 100
   listNotifications: {fileID: 1823035125}
   notificationParent: {fileID: 1143875425}
+  isDating: 0
+  isWorking: 0
 --- !u!4 &1823035124
 Transform:
   m_ObjectHideFlags: 0
@@ -1620,6 +1623,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d657bb42fdefea0499b090ec75399261, type: 2}
   datingNotifications:
   - {fileID: 11400000, guid: 6da58f62e4f92de4f9139a4d032197a6, type: 2}
+  workingNotifications: []
 --- !u!1 &1891813658
 GameObject:
   m_ObjectHideFlags: 0

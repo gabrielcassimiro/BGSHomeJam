@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class NotificationPrefab : MonoBehaviour
 {
+    [SerializeField] private Text title = null;
     [SerializeField] private Text text = null;
     [SerializeField] private Text firstOptionText = null;
     [SerializeField] private Text secondOptionText = null;
@@ -14,9 +15,10 @@ public class NotificationPrefab : MonoBehaviour
     public void Init(NotificationObject notificationObject, Action action = null,
         Action<NotificationObject> specificAction = null)
     {
-        text.text = notificationObject.messageNotification;
-        firstOptionText.text = notificationObject.textFirstOption;
-        secondOptionText.text = notificationObject.textSecondOption;
+        if (title) title.text = notificationObject.titleNotification;
+        if (text) text.text = notificationObject.messageNotification;
+        if (firstOptionText) firstOptionText.text = notificationObject.textFirstOption;
+        if (secondOptionText) secondOptionText.text = notificationObject.textSecondOption;
 
         if (!notificationObject.repeat)
         {
@@ -29,17 +31,41 @@ public class NotificationPrefab : MonoBehaviour
 
         this.firstOption.onClick.AddListener(() =>
         {
+            if (notificationObject.firstOptionAffect)
+            {
+                if (notificationObject.affectingDating)
+                    GameController.Instance.isDating = notificationObject.datingStatus;
+                if (notificationObject.affectWork)
+                    GameController.Instance.isWorking = notificationObject.employmentStatus;
+                if (notificationObject.affectsStudies)
+                    GameController.Instance.isStudying = notificationObject.studiesStatus;
+            }
+
             StopAllCoroutines();
-            if (notificationObject.sequenceFirstOption != null) specificAction?.Invoke(notificationObject.sequenceFirstOption);
-            else action?.Invoke();;
+            if (notificationObject.sequenceFirstOption != null)
+                specificAction?.Invoke(notificationObject.sequenceFirstOption);
+            else action?.Invoke();
+            ;
             GameController.Instance.ChangeStatus(notificationObject.changeStatusFirstOption);
             Destroy(gameObject);
         });
         this.secondOption.onClick.AddListener(() =>
         {
+            if (notificationObject.secondOptionAffect)
+            {
+                if (notificationObject.affectingDating)
+                    GameController.Instance.isDating = notificationObject.datingStatus;
+                if (notificationObject.affectWork)
+                    GameController.Instance.isWorking = notificationObject.employmentStatus;
+                if (notificationObject.affectsStudies)
+                    GameController.Instance.isStudying = notificationObject.studiesStatus;
+            }
+
             StopAllCoroutines();
-            if (notificationObject.sequenceSecondOption != null) specificAction?.Invoke(notificationObject.sequenceSecondOption);
-            else action?.Invoke();;
+            if (notificationObject.sequenceSecondOption != null)
+                specificAction?.Invoke(notificationObject.sequenceSecondOption);
+            else action?.Invoke();
+            ;
             GameController.Instance.ChangeStatus(notificationObject.changeStatusSecondOption);
             Destroy(gameObject);
         });
