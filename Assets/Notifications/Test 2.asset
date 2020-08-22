@@ -26,6 +26,8 @@ MonoBehaviour:
     value: 5
   - typeNotification: 3
     value: -5
+  sequenceFirstOption: {fileID: 11400000, guid: 1908a2a808b0f1644827654ed61f7b40,
+    type: 2}
   textSecondOption: 
   changeStatusSecondOption:
   - typeNotification: 0
@@ -36,4 +38,6 @@ MonoBehaviour:
     value: -5
   - typeNotification: 3
     value: 5
+  sequenceSecondOption: {fileID: 11400000, guid: 1908a2a808b0f1644827654ed61f7b40,
+    type: 2}
   repeat: 1

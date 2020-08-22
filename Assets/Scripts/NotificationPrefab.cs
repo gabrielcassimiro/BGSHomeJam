@@ -11,7 +11,8 @@ public class NotificationPrefab : MonoBehaviour
     [SerializeField] private Button firstOption = null;
     [SerializeField] private Button secondOption = null;
 
-    public void Init(NotificationObject notificationObject, Action action = null)
+    public void Init(NotificationObject notificationObject, Action action = null,
+        Action<NotificationObject> specificAction = null)
     {
         text.text = notificationObject.messageNotification;
         firstOptionText.text = notificationObject.textFirstOption;
@@ -29,14 +30,16 @@ public class NotificationPrefab : MonoBehaviour
         this.firstOption.onClick.AddListener(() =>
         {
             StopAllCoroutines();
-            action?.Invoke();
+            if (notificationObject.sequenceFirstOption != null) specificAction?.Invoke(notificationObject.sequenceFirstOption);
+            else action?.Invoke();;
             GameController.Instance.ChangeStatus(notificationObject.changeStatusFirstOption);
             Destroy(gameObject);
         });
         this.secondOption.onClick.AddListener(() =>
         {
             StopAllCoroutines();
-            action?.Invoke();
+            if (notificationObject.sequenceSecondOption != null) specificAction?.Invoke(notificationObject.sequenceSecondOption);
+            else action?.Invoke();;
             GameController.Instance.ChangeStatus(notificationObject.changeStatusSecondOption);
             Destroy(gameObject);
         });

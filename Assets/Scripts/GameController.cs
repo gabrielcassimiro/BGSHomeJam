@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Enums;
+using Scriptable;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -58,12 +59,26 @@ public class GameController : MonoBehaviour
         });
     }
 
-    public void NewNotification()
+    public void NewNotification(NotificationObject notificationObject = null)
     {
-        var notification = listNotifications.GetNotification(true);
-        var go = Instantiate(notification.notificationPrefab, notificationParent);
-        var prefab = go.GetComponent<NotificationPrefab>();
-        prefab.Init(notification, CallEnumerator);
+        if (!notificationObject)
+        {
+            var notification = listNotifications.GetNotification(true);
+            var go = Instantiate(notification.notificationPrefab, notificationParent);
+            var prefab = go.GetComponent<NotificationPrefab>();
+            prefab.Init(notification, CallEnumerator, NewSpecificNotification);
+        }
+        else
+        {
+            var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
+            var prefab = go.GetComponent<NotificationPrefab>();
+            prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
+        }
+    }
+
+    private void NewSpecificNotification(NotificationObject notificationObject)
+    {
+        StartCoroutine(WaitNewNotification(notificationObject));
     }
 
     private void CallEnumerator()
@@ -71,10 +86,11 @@ public class GameController : MonoBehaviour
         StartCoroutine(WaitNewNotification());
     }
 
-    private IEnumerator WaitNewNotification()
+    private IEnumerator WaitNewNotification(NotificationObject notificationObject = null)
     {
         yield return new WaitForSeconds(1f);
-        NewNotification();
+        if (!notificationObject) NewNotification();
+        else NewNotification(notificationObject);
     }
 
     public static void GameOver()
