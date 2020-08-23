@@ -27,7 +27,7 @@ MonoBehaviour:
   - typeNotification: 0
     value: 0
   - typeNotification: 2
-    value: 10
+    value: -10
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}

@@ -24,7 +24,7 @@ MonoBehaviour:
     mas as gordurinhas t\xE3o batendo)"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 0
+    value: 10
   - typeNotification: 0
     value: 0
   - typeNotification: 2
@@ -36,7 +36,7 @@ MonoBehaviour:
     gripado)"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
+    value: 10
   - typeNotification: 0
     value: 0
   - typeNotification: 2

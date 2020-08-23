@@ -29,14 +29,14 @@ MonoBehaviour:
   - typeNotification: 2
     value: 0
   - typeNotification: 3
-    value: -5
+    value: -10
   sequenceFirstOption: {fileID: 0}
   textSecondOption: Participa da fofoca
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0
   - typeNotification: 0
-    value: -5
+    value: -10
   - typeNotification: 2
     value: 0
   - typeNotification: 3

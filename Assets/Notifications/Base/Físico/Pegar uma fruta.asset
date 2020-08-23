@@ -15,25 +15,23 @@ MonoBehaviour:
   typeNotification: 2
   titleNotification: Dia da fruta
   messageNotification: Comprar uma fruta
-  notificationPrefab: {fileID: 6544865300836683170, guid: 7c4e4bb6d30c276418d0be36fa07d5e5,
+  notificationPrefab: {fileID: 850789642281990547, guid: 44df6ba1ea9049346a6aaf4e07785f9e,
     type: 3}
   repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Comprar fruta em promo\xE7\xE3o. (Quando chega percebe que est\xE1
-    podre)"
+  textFirstOption: "Comprar fruta em promo\xE7\xE3o"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 10
+    value: 0
   - typeNotification: 0
     value: 0
   - typeNotification: 2
-    value: -10
+    value: 10
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Comprar fruta em promo\xE7\xE3o. (Guarda na bolsa e esquece
-    nela)"
+  textSecondOption: "N\xE3o comprar fruta em promo\xE7\xE3o"
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0

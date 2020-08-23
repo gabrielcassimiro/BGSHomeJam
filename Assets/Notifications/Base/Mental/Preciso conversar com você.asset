@@ -34,7 +34,7 @@ MonoBehaviour:
   textSecondOption: "Est\xE1 cansado da vida, n\xE3o se importa com nada "
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 5
+    value: 10
   - typeNotification: 0
     value: 0
   - typeNotification: 2

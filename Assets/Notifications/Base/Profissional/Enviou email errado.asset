@@ -23,7 +23,7 @@ MonoBehaviour:
   textFirstOption: Pede desculpa diretamente ao chefe
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 0
+    value: -10
   - typeNotification: 0
     value: 0
   - typeNotification: 2

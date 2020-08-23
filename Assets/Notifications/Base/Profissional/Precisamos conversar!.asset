@@ -23,7 +23,7 @@ MonoBehaviour:
   textFirstOption: Fica com medo e corre perguntar o que houve
   changeStatusFirstOption:
   - typeNotification: 1
-    value: -5
+    value: -10
   - typeNotification: 0
     value: 0
   - typeNotification: 2
@@ -31,7 +31,7 @@ MonoBehaviour:
   - typeNotification: 3
     value: 10
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o se preocupa porque sabe que est\xE1 tudo bem"
+  textSecondOption: Pergunta
   changeStatusSecondOption:
   - typeNotification: 1
     value: 10

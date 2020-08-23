@@ -34,7 +34,7 @@ MonoBehaviour:
   textSecondOption: "Eu n\xE3o gosto de voc\xEA do mesmo jeito..."
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 10
+    value: -10
   - typeNotification: 0
     value: -10
   - typeNotification: 2

@@ -20,14 +20,12 @@ MonoBehaviour:
   repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Brigar. Vestibulum enim diam, scelerisque sit amet enim quis,
-    lacinia feugiat metus. Aenean mattis eget lectus nec convallis. Nulla quis varius
-    erat. Vivamus imperdiet nunc ante, viverra sollicitudin massa ultrices eu.
+  textFirstOption: Brigar.
   changeStatusFirstOption:
   - typeNotification: 1
     value: -10
   - typeNotification: 0
-    value: 0
+    value: -10
   - typeNotification: 2
     value: 0
   - typeNotification: 3
@@ -36,9 +34,9 @@ MonoBehaviour:
   textSecondOption: Evitar
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
+    value: 10
   - typeNotification: 0
-    value: -10
+    value: 0
   - typeNotification: 2
     value: 0
   - typeNotification: 3

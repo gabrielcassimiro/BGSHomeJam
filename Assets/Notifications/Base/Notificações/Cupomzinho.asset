@@ -27,14 +27,14 @@ MonoBehaviour:
   - typeNotification: 0
     value: 0
   - typeNotification: 2
-    value: -5
+    value: -10
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
   textSecondOption: Sua batata doce com frango te aguarda
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
+    value: 10
   - typeNotification: 0
     value: 0
   - typeNotification: 2

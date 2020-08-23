@@ -32,14 +32,14 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Est\xE1 em um dia ruim, acaba s\xF3 dormindo"
+  textSecondOption: "Est\xE1 em um dia ruim, mas acaba indo"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
+    value: -10
   - typeNotification: 0
     value: 0
   - typeNotification: 2
-    value: -10
+    value: 10
   - typeNotification: 3
     value: 0
   sequenceSecondOption: {fileID: 0}

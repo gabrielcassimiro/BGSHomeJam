@@ -25,18 +25,18 @@ MonoBehaviour:
   - typeNotification: 1
     value: 10
   - typeNotification: 0
-    value: 10
+    value: 0
   - typeNotification: 2
     value: 0
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Agradece
+  textSecondOption: "N\xE3o entende nada"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 10
+    value: -10
   - typeNotification: 0
-    value: 10
+    value: 0
   - typeNotification: 2
     value: 0
   - typeNotification: 3
