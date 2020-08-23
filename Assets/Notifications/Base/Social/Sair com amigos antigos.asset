@@ -18,7 +18,7 @@ MonoBehaviour:
   notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
-  newNotification: 1
+  newNotification: 0
   newNotificationObject: {fileID: 0}
   textFirstOption: "Vou. Rever os amigos \xE9 sempre bom."
   changeStatusFirstOption:
