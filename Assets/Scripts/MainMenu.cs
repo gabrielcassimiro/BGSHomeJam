@@ -17,7 +17,8 @@ public class MainMenu : MonoBehaviour
 
     private void PlayGame()
     {
-        SceneManager.LoadScene("PrototypeScene");
+        GameController.Instance.StartGame();
+        Destroy(gameObject);
     }
 
     private void Credits()

@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using Enums;
 using Scriptable;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -31,6 +34,10 @@ public class GameController : MonoBehaviour
     public static bool PlayGame = true;
     [SerializeField] private float timeToNextNotification = 1.0f;
     [SerializeField] private int countToWinGame;
+    [SerializeField] private GameObject mainMenuPrefab;
+    [SerializeField] private StartStatusPanel startStatusPrefab;
+    [SerializeField] private Button backToMenuButton;
+    [SerializeField] private Animator smartphoneAnim;
     [Header("Social Status")] public bool isDating = false;
     public bool isWorking = false;
     public bool isStudying = false;
@@ -46,7 +53,13 @@ public class GameController : MonoBehaviour
             StatusManager.instance.Init(value.Key, fillAmount);
         }
 
-        // NewNotification();
+        GoToMainMenu();
+        backToMenuButton.onClick.AddListener(BackToMenu);
+    }
+
+    private void GoToMainMenu()
+    {
+        var go = Instantiate(mainMenuPrefab, notificationParent);
     }
 
     private void InitStatus()
@@ -128,7 +141,7 @@ public class GameController : MonoBehaviour
                 if (dayHourText)
                 {
                     if (minutes < 10) dayHourText.text = $"14:0{minutes}";
-                    else dayHourText.text = $"08:{minutes}";
+                    else dayHourText.text = $"14:{minutes}";
                 }
 
                 break;
@@ -136,7 +149,7 @@ public class GameController : MonoBehaviour
                 if (dayHourText)
                 {
                     if (minutes < 10) dayHourText.text = $"19:0{minutes}";
-                    else dayHourText.text = $"08:{minutes}";
+                    else dayHourText.text = $"19:{minutes}";
                 }
 
                 break;
@@ -144,7 +157,7 @@ public class GameController : MonoBehaviour
                 if (dayHourText)
                 {
                     if (minutes < 10) dayHourText.text = $"22:0{minutes}";
-                    else dayHourText.text = $"08:{minutes}";
+                    else dayHourText.text = $"22:{minutes}";
                 }
 
                 break;
@@ -161,7 +174,6 @@ public class GameController : MonoBehaviour
 
     private void SetDay()
     {
-        SetHourText();
         switch (daysCount % 7)
         {
             case 1:
@@ -210,12 +222,15 @@ public class GameController : MonoBehaviour
 
     public void CallEnumerator()
     {
+        SetHourText();
         StartCoroutine(WaitNewNotification());
     }
 
     private IEnumerator WaitNewNotification(NotificationObject notificationObject = null)
     {
         yield return new WaitForSeconds(timeToNextNotification);
+        smartphoneAnim.SetTrigger("Notification");
+        yield return new WaitForSeconds(1.0f);
         if (!notificationObject) NewNotification();
         else NewNotification(notificationObject);
     }
@@ -231,11 +246,42 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("You Win!");
     }
-    
-    public static void GameOver()
+
+    public void GameOver()
     {
         // Time.timeScale = 0.0f;
         PlayGame = false;
+
+        if (playerStatus[TypeNotification.Mental] < 1)
+        {
+            Debug.Log("Perdeu no Mental");
+        }
+        else if (playerStatus[TypeNotification.Physical] < 1)
+        {
+            Debug.Log("Perdeu no Physical");
+        }
+        else if (playerStatus[TypeNotification.Professional] < 1)
+        {
+            Debug.Log("Perdeu no Professional");
+        }
+        else if (playerStatus[TypeNotification.Social] < 1)
+        {
+            Debug.Log("Perdeu no Social");
+        }
+
         Debug.Log("Game Over!");
+    }
+
+    public void StartGame()
+    {
+        PlayGame = true;
+        startStatusPrefab.NewNotification();
+    }
+
+    private void BackToMenu()
+    {
+        var sceneName = SceneManager.GetActiveScene().name;
+        Debug.Log(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 }

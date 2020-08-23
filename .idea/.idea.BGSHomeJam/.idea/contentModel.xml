@@ -22,6 +22,9 @@
           <e p="Status.cs" t="Include" />
           <e p="StatusManager.cs" t="Include" />
         </e>
+        <e p="SFX" t="Include">
+          <e p="PlayAudio.cs" t="Include" />
+        </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />

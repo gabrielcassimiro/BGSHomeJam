@@ -70,7 +70,7 @@ public class StatusManager : MonoBehaviour
         else
         {
             target.fillAmount = 0;
-            GameController.GameOver();
+            GameController.Instance.GameOver();
         }
         yield return new WaitForSeconds(0.01f);
         if (Math.Abs(currentValue - finalValue) > 0.0001f) StartCoroutine(ChangeValueBar(target, newValue, finalValue));
