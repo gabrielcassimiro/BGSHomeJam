@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dayNameText = null;
     [SerializeField] private TextMeshProUGUI dayHourText = null;
     public static bool PlayGame = true;
+    [SerializeField] private float timeToNextNotification = 1.0f;
 
     [Header("Social Status")] public bool isDating = false;
     public bool isWorking = false;
@@ -201,7 +202,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator WaitNewNotification(NotificationObject notificationObject = null)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(timeToNextNotification);
         if (!notificationObject) NewNotification();
         else NewNotification(notificationObject);
     }
