@@ -1780,13 +1780,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseNotifications:
-  - {fileID: 11400000, guid: 2cabfdd96b317ab4cb2641a2bf2994a5, type: 2}
-  - {fileID: 11400000, guid: 9ec4aae597882a04cbd656d5258739b6, type: 2}
-  - {fileID: 11400000, guid: 6d7a5d8c42de8054db64a10eb4abde07, type: 2}
-  - {fileID: 11400000, guid: 8d3b1452f961ad040a2d9295011d8871, type: 2}
-  - {fileID: 11400000, guid: d657bb42fdefea0499b090ec75399261, type: 2}
-  datingNotifications:
-  - {fileID: 11400000, guid: 6da58f62e4f92de4f9139a4d032197a6, type: 2}
+  - {fileID: 11400000, guid: 953a5f0d26296a646b504662c8689cdf, type: 2}
+  - {fileID: 11400000, guid: 67e0ca2891ed4a743b51046e6aecae01, type: 2}
+  - {fileID: 11400000, guid: 0912ce3f6f6a911479701aa5e45abaf7, type: 2}
+  - {fileID: 11400000, guid: 78a115b238b91ff4b999865c943b377c, type: 2}
+  - {fileID: 11400000, guid: c6d65bf221013f84a9a669b37d52a15f, type: 2}
+  - {fileID: 11400000, guid: 9a0a89b0eaebf36488b703a82ad36ffd, type: 2}
+  - {fileID: 11400000, guid: 56f21bf9dfa6efe42a28eecc9272b889, type: 2}
+  - {fileID: 11400000, guid: 02ab8431267034141a6cb57dc689ac85, type: 2}
+  - {fileID: 11400000, guid: 6011a34b8d8383447b170ae3b332edd5, type: 2}
+  - {fileID: 11400000, guid: 39d02a8656962964386099dfc3c71868, type: 2}
+  - {fileID: 11400000, guid: f1ee644c8f879224baef5c2fd9e0c472, type: 2}
+  - {fileID: 11400000, guid: 31f91eb03feff0445a693cb142b824db, type: 2}
+  - {fileID: 11400000, guid: 0f207f8478e032c44ae90ed78854afa6, type: 2}
+  - {fileID: 11400000, guid: 7bcefbbec7560d54aaac7225a0aa178e, type: 2}
+  - {fileID: 11400000, guid: 4fb2e10d48562104787211e6ec54b207, type: 2}
+  - {fileID: 11400000, guid: 22cbf5d5f0f37cc4fae5dd7f532f2765, type: 2}
+  - {fileID: 11400000, guid: ba309b4af8a6bd54baea1ffa3fd50423, type: 2}
+  - {fileID: 11400000, guid: 7d064e5609a8aa0489e149ea1bb4099e, type: 2}
+  - {fileID: 11400000, guid: 4803531203a31fe449bf8f3f21eb8b7f, type: 2}
+  datingNotifications: []
   workingNotifications: []
   studyingNotifications: []
   extraNotifications: []
