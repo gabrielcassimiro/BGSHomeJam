@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 0
   titleNotification: 
   messageNotification: Duas linguas - ENGLISH NOW!
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 619430876291953969, guid: 509e2073ed10b36409ad2944d02765d3,
     type: 3}
   repeat: 1
   newNotification: 0

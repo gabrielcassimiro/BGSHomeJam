@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 1
   titleNotification: 
   messageNotification: Mensagem da tia religiosa
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Ganhou um sorteio
   m_EditorClassIdentifier: 
   typeNotification: 3
-  titleNotification: 
+  titleNotification: Sorteador
   messageNotification: "Ganhou sorteio \u2013 Mas para isso tem que ir embora mais
     cedo em um dia que tem reuni\xE3o com o chefe."
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
     type: 3}
   repeat: 0
   newNotification: 0

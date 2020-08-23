@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 0
   titleNotification: 
   messageNotification: CHEGOU CUPOM!
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 850789642281990547, guid: 44df6ba1ea9049346a6aaf4e07785f9e,
     type: 3}
   repeat: 1
   newNotification: 0

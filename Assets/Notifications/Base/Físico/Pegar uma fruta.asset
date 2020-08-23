@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 2
   titleNotification: 
   messageNotification: Pegar uma fruta
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
     type: 3}
   repeat: 0
   newNotification: 0

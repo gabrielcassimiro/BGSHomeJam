@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Desenvolver novo projeto
   m_EditorClassIdentifier: 
   typeNotification: 3
-  titleNotification: 
-  messageNotification: 
-  notificationPrefab: {fileID: 0}
+  titleNotification: Chefe
+  messageNotification: "Ol\xE1! N\xE3o se esque\xE7a do novo projeto."
+  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
+    type: 3}
   repeat: 0
   newNotification: 1
   newNotificationObject: {fileID: 11400000, guid: f5bc0dcade2c81345a89f4c12f4327f2,

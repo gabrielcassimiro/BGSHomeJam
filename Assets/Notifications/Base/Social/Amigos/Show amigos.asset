@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Show amigos
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: "Dessa vez voc\xEA disse que ia."
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  titleNotification: Amigo
+  messageNotification: "Rol\xEA hoje ein! Dessa vez voc\xEA disse que ia."
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 0
   newNotification: 0

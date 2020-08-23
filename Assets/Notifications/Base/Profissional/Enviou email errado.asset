@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enviou email errado
   m_EditorClassIdentifier: 
   typeNotification: 3
-  titleNotification: 
+  titleNotification: "Voc\xEA"
   messageNotification: "O e-mail vai para algu\xE9m que n\xE3o devia ir."
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}

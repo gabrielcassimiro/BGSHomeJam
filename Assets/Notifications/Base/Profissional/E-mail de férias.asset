@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: "E-mail de f\xE9rias"
   m_EditorClassIdentifier: 
   typeNotification: 3
-  titleNotification: 
+  titleNotification: RH
   messageNotification: "Encaminharam e-mail de f\xE9rias errado"
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
     type: 3}
   repeat: 0
   newNotification: 0

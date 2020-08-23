@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 2
   titleNotification: 
   messageNotification: "Oferecem um peda\xE7o de bolo para voc\xEA."
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 6544865300836683170, guid: 7c4e4bb6d30c276418d0be36fa07d5e5,
     type: 3}
   repeat: 0
   newNotification: 0

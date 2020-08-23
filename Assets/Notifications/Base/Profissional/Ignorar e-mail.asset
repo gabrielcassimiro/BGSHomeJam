@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Ignorar e-mail
   m_EditorClassIdentifier: 
   typeNotification: 3
-  titleNotification: 
+  titleNotification: "Algu\xE9m"
   messageNotification: "Algu\xE9m do trabalho envia um e-mail qualquer para todos
     os destinat\xE1rios"
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
     type: 3}
   repeat: 0
   newNotification: 0

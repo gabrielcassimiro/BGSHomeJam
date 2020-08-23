@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Sair com amigos antigos
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: Sair com amigos antigos
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  titleNotification: Amigo
+  messageNotification: Bora sair com amigos antigos?
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 1
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Ir. Rever os amigos \xE9 sempre bom"
+  textFirstOption: "Vou. Rever os amigos \xE9 sempre bom."
   changeStatusFirstOption:
   - typeNotification: 1
     value: 5
@@ -31,7 +31,7 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Marcar para uma pr\xF3xima vez"
+  textSecondOption: "Vamos marcar para uma pr\xF3xima vez."
   changeStatusSecondOption: []
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0

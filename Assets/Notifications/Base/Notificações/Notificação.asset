@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 0
   titleNotification: 
   messageNotification: "Notifica\xE7\xE3o"
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
     type: 3}
   repeat: 1
   newNotification: 0
