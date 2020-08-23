@@ -15,7 +15,8 @@ MonoBehaviour:
   typeNotification: 0
   titleNotification: 
   messageNotification: Sair com amigos antigos
-  notificationPrefab: {fileID: 0}
+  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+    type: 3}
   repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
