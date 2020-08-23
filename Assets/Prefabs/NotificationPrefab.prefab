@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7527897866043342526}
   - component: {fileID: 7527897866043342524}
   - component: {fileID: 7527897866043342525}
+  - component: {fileID: 591915297}
   m_Layer: 5
   m_Name: AnswerBackground
   m_TagString: Untagged
@@ -78,6 +79,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &591915297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527897866043342527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &7527897866055395097
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7527897866055395096}
   - component: {fileID: 7527897866055395103}
+  - component: {fileID: 591915298}
   m_Layer: 5
   m_Name: NotificationPrefab
   m_TagString: Untagged
@@ -134,6 +149,25 @@ MonoBehaviour:
   secondOptionText: {fileID: 7527897867309395244}
   firstOption: {fileID: 7527897866350051460}
   secondOption: {fileID: 7527897866346595930}
+--- !u!95 &591915298
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527897866055395097}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb0342027b1f2784c86fa60b758ab654, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7527897866118136700
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,6 +623,7 @@ GameObject:
   - component: {fileID: 7527897866867118642}
   - component: {fileID: 7527897866867118640}
   - component: {fileID: 7527897866867118641}
+  - component: {fileID: 7746633512039094882}
   m_Layer: 5
   m_Name: BackgroundNotification
   m_TagString: Untagged
@@ -655,6 +690,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7746633512039094882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527897866867118643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &7527897866891442969
 GameObject:
   m_ObjectHideFlags: 0

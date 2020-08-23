@@ -12,6 +12,12 @@ public class NotificationPrefab : MonoBehaviour
     [SerializeField] private TextMeshProUGUI secondOptionText = null;
     [SerializeField] private Button firstOption = null;
     [SerializeField] private Button secondOption = null;
+    private Animator _animator;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     public void Init(NotificationObject notificationObject, Action action = null,
         Action<NotificationObject> specificAction = null)
@@ -39,6 +45,8 @@ public class NotificationPrefab : MonoBehaviour
 
         this.firstOption.onClick.AddListener(() =>
         {
+            if(_animator != null)
+                _animator.SetTrigger("FirstOption");
             if (notificationObject.firstOptionAffect)
             {
                 if (notificationObject.affectingDating)
@@ -63,10 +71,12 @@ public class NotificationPrefab : MonoBehaviour
             }
             
             GameController.Instance.ChangeStatus(notificationObject.changeStatusFirstOption);
-            Destroy(gameObject);
+            
         });
         this.secondOption.onClick.AddListener(() =>
         {
+            if(_animator != null)
+            _animator.SetTrigger("SecondOption");
             if (notificationObject.secondOptionAffect)
             {
                 if (notificationObject.affectingDating)
@@ -91,7 +101,11 @@ public class NotificationPrefab : MonoBehaviour
             }
             
             GameController.Instance.ChangeStatus(notificationObject.changeStatusSecondOption);
-            Destroy(gameObject);
         });
+    }
+
+    public void DestroyGameObject()
+    {
+        Destroy(gameObject);
     }
 }
