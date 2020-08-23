@@ -26,8 +26,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private DaysOfWeek daysOfWeek = DaysOfWeek.Domingo;
     [SerializeField] private int daysCount = 1;
     [SerializeField] private int notificationsCount = 0;
-    [SerializeField] private Text dayNameText;
-    [SerializeField] private Text dayNumberText;
+    [SerializeField] private Text dayNameText = null;
+    [SerializeField] private Text dayNumberText = null;
+    public static bool PlayGame = true;
 
     [Header("Social Status")] public bool isDating = false;
     public bool isWorking = false;
@@ -72,19 +73,26 @@ public class GameController : MonoBehaviour
 
     public void NewNotification(NotificationObject notificationObject = null)
     {
-        DaysManager();
-        if (!notificationObject)
+        if (PlayGame)
         {
-            var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
-            var go = Instantiate(notification.notificationPrefab, notificationParent);
-            var prefab = go.GetComponent<NotificationPrefab>();
-            prefab.Init(notification, CallEnumerator, NewSpecificNotification);
+            DaysManager();
+            if (!notificationObject)
+            {
+                var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
+                var go = Instantiate(notification.notificationPrefab, notificationParent);
+                var prefab = go.GetComponent<NotificationPrefab>();
+                prefab.Init(notification, CallEnumerator, NewSpecificNotification);
+            }
+            else
+            {
+                var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
+                var prefab = go.GetComponent<NotificationPrefab>();
+                prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
+            }
         }
         else
         {
-            var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
-            var prefab = go.GetComponent<NotificationPrefab>();
-            prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
+            Debug.Log("GameOver");
         }
     }
 
@@ -152,7 +160,8 @@ public class GameController : MonoBehaviour
 
     public static void GameOver()
     {
-        Time.timeScale = 0.0f;
+        // Time.timeScale = 0.0f;
+        PlayGame = false;
         Debug.Log("Game Over!");
     }
 }
