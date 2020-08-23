@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using Enums;
 using Scriptable;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -26,8 +26,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private DaysOfWeek daysOfWeek = DaysOfWeek.Domingo;
     [SerializeField] private int daysCount = 1;
     [SerializeField] private int notificationsCount = 0;
-    [SerializeField] private Text dayNameText = null;
-    [SerializeField] private Text dayNumberText = null;
+    [SerializeField] private TextMeshProUGUI dayNameText = null;
+    [SerializeField] private TextMeshProUGUI dayHourText = null;
     public static bool PlayGame = true;
 
     [Header("Social Status")] public bool isDating = false;
@@ -96,6 +96,46 @@ public class GameController : MonoBehaviour
         }
     }
 
+    private void SetHourText()
+    {
+        var minutes = Random.Range(0, 59);
+        switch (notificationsCount % 4)
+        {
+            case 0:
+                if (dayHourText)
+                {
+                    if (minutes < 10) dayHourText.text = $"08:0{minutes}";
+                    else dayHourText.text = $"08:{minutes}";
+                }
+
+                break;
+            case 1:
+                if (dayHourText)
+                {
+                    if (minutes < 10) dayHourText.text = $"14:0{minutes}";
+                    else dayHourText.text = $"08:{minutes}";
+                }
+
+                break;
+            case 2:
+                if (dayHourText)
+                {
+                    if (minutes < 10) dayHourText.text = $"19:0{minutes}";
+                    else dayHourText.text = $"08:{minutes}";
+                }
+
+                break;
+            case 3:
+                if (dayHourText)
+                {
+                    if (minutes < 10) dayHourText.text = $"22:0{minutes}";
+                    else dayHourText.text = $"08:{minutes}";
+                }
+
+                break;
+        }
+    }
+
     private void DaysManager()
     {
         notificationsCount++;
@@ -107,38 +147,46 @@ public class GameController : MonoBehaviour
 
     private void SetDay()
     {
+        SetHourText();
         switch (daysCount % 7)
         {
             case 1:
                 daysOfWeek = DaysOfWeek.Domingo;
-                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}";
+                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}, dia {GetCurrentDay()}";
                 break;
             case 2:
                 daysOfWeek = DaysOfWeek.Segunda;
-                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira";
+                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira, dia {GetCurrentDay()}";
                 break;
             case 3:
                 daysOfWeek = DaysOfWeek.Terça;
-                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira";
+                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira, dia {GetCurrentDay()}";
                 break;
             case 4:
                 daysOfWeek = DaysOfWeek.Quarta;
-                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira";
+                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira, dia {GetCurrentDay()}";
                 break;
             case 5:
                 daysOfWeek = DaysOfWeek.Quinta;
-                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira";
+                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira, dia {GetCurrentDay()}";
                 break;
             case 6:
                 daysOfWeek = DaysOfWeek.Sexta;
-                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira";
+                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}-Feira, dia {GetCurrentDay()}";
                 break;
             case 0:
                 daysOfWeek = DaysOfWeek.Sábado;
-                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}";
+                if (dayNameText) dayNameText.text = $"{daysOfWeek.ToString()}, dia {GetCurrentDay()}";
                 break;
         }
-        if (dayNumberText) dayNumberText.text = $"{daysCount.ToString()}";
+    }
+
+    private string GetCurrentDay()
+    {
+        if (daysCount < 10)
+            return $"0{daysCount}";
+        else
+            return $"{daysCount}";
     }
 
     private void NewSpecificNotification(NotificationObject notificationObject)

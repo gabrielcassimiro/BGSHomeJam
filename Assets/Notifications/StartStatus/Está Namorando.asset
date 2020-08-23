@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: "Est\xE1 Namorando"
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
+  titleNotification: Seu Perfil
   messageNotification: "Est\xE1 Namorando? "
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
     type: 3}
+  repeat: 0
+  newNotification: 0
+  newNotificationObject: {fileID: 0}
   textFirstOption: Sim
   changeStatusFirstOption:
   - typeNotification: 0
@@ -39,10 +42,11 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceSecondOption: {fileID: 0}
-  repeat: 0
   affectingDating: 1
   datingStatus: 1
   affectWork: 0
   employmentStatus: 0
+  affectsStudies: 0
+  studiesStatus: 0
   firstOptionAffect: 1
   secondOptionAffect: 0

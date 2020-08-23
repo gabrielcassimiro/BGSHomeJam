@@ -36,8 +36,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable/NotificationObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ListNotifications.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/DaysOfWeek.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NotificationPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -99,7 +99,7 @@
       <workItem from="1598061364783" duration="3476000" />
       <workItem from="1598070844840" duration="4601000" />
       <workItem from="1598088428014" duration="33298000" />
-      <workItem from="1598175134018" duration="2367000" />
+      <workItem from="1598175134018" duration="3600000" />
     </task>
     <servers />
   </component>
@@ -116,9 +116,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598103796467" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1598071680571">
+    <state x="616" y="243" key="run.anything.popup" timestamp="1598182930031">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598071680571" />
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598182930031" />
   </component>
 </project>

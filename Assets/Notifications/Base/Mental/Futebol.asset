@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Futebol
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
+  titleNotification: Leo Dantas
   messageNotification: Bora jogar um futebol?
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
+  notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
     type: 3}
-  repeat: 0
+  repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
   textFirstOption: 'Bora! '
