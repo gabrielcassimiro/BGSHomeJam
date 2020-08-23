@@ -38,6 +38,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private StartStatusPanel startStatusPrefab;
     [SerializeField] private Button backToMenuButton;
     [SerializeField] private Animator smartphoneAnim;
+    [SerializeField] private List<Sprite> endGameSprites;
+    [SerializeField] private Image endGameImage;
     [Header("Social Status")] public bool isDating = false;
     public bool isWorking = false;
     public bool isStudying = false;
@@ -242,8 +244,10 @@ public class GameController : MonoBehaviour
         return singleNotifications;
     }
 
-    public static void WinMatch()
+    public void WinMatch()
     {
+        endGameImage.gameObject.SetActive(true);
+        endGameImage.sprite = endGameSprites[4];
         Debug.Log("You Win!");
     }
 
@@ -254,18 +258,26 @@ public class GameController : MonoBehaviour
 
         if (playerStatus[TypeNotification.Mental] < 1)
         {
+            endGameImage.gameObject.SetActive(true);
+            endGameImage.sprite = endGameSprites[0];
             Debug.Log("Perdeu no Mental");
         }
         else if (playerStatus[TypeNotification.Physical] < 1)
         {
+            endGameImage.gameObject.SetActive(true);
+            endGameImage.sprite = endGameSprites[1];
             Debug.Log("Perdeu no Physical");
         }
         else if (playerStatus[TypeNotification.Professional] < 1)
         {
+            endGameImage.gameObject.SetActive(true);
+            endGameImage.sprite = endGameSprites[2];
             Debug.Log("Perdeu no Professional");
         }
         else if (playerStatus[TypeNotification.Social] < 1)
         {
+            endGameImage.gameObject.SetActive(true);
+            endGameImage.sprite = endGameSprites[3];
             Debug.Log("Perdeu no Social");
         }
 

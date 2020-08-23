@@ -399,6 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4566480996242977869}
   - component: {fileID: 4566480996242977868}
+  - component: {fileID: 1175908171427491532}
   m_Layer: 5
   m_Name: ProfessionalNotification
   m_TagString: Untagged
@@ -450,6 +451,25 @@ MonoBehaviour:
   secondOptionText: {fileID: 0}
   firstOption: {fileID: 4566480996162606849}
   secondOption: {fileID: 4566480997959797181}
+--- !u!95 &1175908171427491532
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566480996242977870}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6be77efd3d154ca47b23be1519d3705e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4566480996621394926
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,20 +803,19 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Bom dia,
 
-    
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Phasellus pellentesque tristique facilisis. Pellentesque id mauris sed
-    est tincidunt sagittis. Phasellus libero nulla, laoreet a porttitor eget, ultricies
-    quis arcu. Nulla sagittis elementum ante, in interdum dolor. Quisque sodales
-    suscipit maximus. Nullam eu luctus urna. Pellentesque habitant morbi tristique
-    senectus et netus et malesuada fames ac turpis egestas. Suspendisse nec viverra
-    arcu. Cras eu vestibulum nibh. Ut eget vestibulum justo.
 
-    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Phasellus pellentesque tristique facilisis. Pellentesque id mauris sed est tincidunt
+    sagittis. Phasellus libero nulla, laoreet a porttitor eget, ultricies quis arcu.
+    Nulla sagittis elementum ante, in interdum dolor. Quisque sodales suscipit maximus.
+    Nullam eu luctus urna. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Suspendisse nec viverra arcu. Cras eu vestibulum
+    nibh. Ut eget vestibulum justo.
 
-    Grato,
-    Nome da Pessoa.'
+
+
+    Grato, Nome da Pessoa.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4dbb24a0af964842a4d7775ec12aca9, type: 2}
   m_sharedMaterial: {fileID: 1414156161804941844, guid: b4dbb24a0af964842a4d7775ec12aca9,
