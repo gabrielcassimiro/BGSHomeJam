@@ -67,6 +67,8 @@ public class GameController : MonoBehaviour
         status.ForEach(stat =>
         {
             playerStatus[stat.typeNotification] += stat.value;
+            if (playerStatus[stat.typeNotification] > 100)
+                playerStatus[stat.typeNotification] = 100;
             var fillAmount = playerStatus[stat.typeNotification] / maxPoints;
             StatusManager.instance.ChangeBar(stat.typeNotification, fillAmount);
         });
@@ -74,11 +76,6 @@ public class GameController : MonoBehaviour
 
     public void NewNotification(NotificationObject notificationObject = null)
     {
-        if (!CheckStatusOfGame())
-        {
-            
-        }
-        
         if (PlayGame)
         {
             if (CheckStatusOfGame())
@@ -159,7 +156,6 @@ public class GameController : MonoBehaviour
         notificationsCount++;
         if (notificationsCount % 4 == 0)
             daysCount++;
-        Debug.Log($"Resto de {notificationsCount}/{7} é {notificationsCount % 7}");
         SetDay();
     }
 
@@ -227,6 +223,7 @@ public class GameController : MonoBehaviour
     private bool CheckStatusOfGame()
     {
         var singleNotifications = listNotifications.GetSingleNotifications();
+        // Debug.Log(singleNotifications);
         return singleNotifications;
     }
 

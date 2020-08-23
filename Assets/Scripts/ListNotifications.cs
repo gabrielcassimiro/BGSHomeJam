@@ -18,9 +18,14 @@ public class ListNotifications : MonoBehaviour
         var workingNot = workingNotifications.Where(b => b.repeat == false).ToList();
         var studyingNot = studyingNotifications.Where(b => b.repeat == false).ToList();
         var extraNot = extraNotifications.Where(b => b.repeat == false).ToList();
+        Debug.Log(
+            $"Base: {baseNot.Count} Dating: {datingNot.Count} Working:{workingNot.Count} Studying:{studyingNot.Count} Extra:{extraNot.Count}");
 
-        var value = baseNot.Count == 0 && datingNot.Count == 0 && workingNot.Count == 0 && studyingNot.Count == 0 &&
-                    extraNot.Count == 0;
+        bool value;
+        if (baseNot.Count == 0 && datingNot.Count == 0 && workingNot.Count == 0 && studyingNot.Count == 0 &&
+            extraNot.Count == 0)
+            value = true;
+        else value = false;
         return value;
     }
 
