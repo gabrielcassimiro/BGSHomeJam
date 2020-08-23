@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: "N\xE3o treinar"
   m_EditorClassIdentifier: 
   typeNotification: 2
-  titleNotification: Vamos treinar?
-  messageNotification: "N\xE3o treinar"
+  titleNotification: Treino
+  messageNotification: Vamos treinar?
   notificationPrefab: {fileID: 6544865300836683170, guid: 7c4e4bb6d30c276418d0be36fa07d5e5,
     type: 3}
   repeat: 0
@@ -26,18 +26,18 @@ MonoBehaviour:
   - typeNotification: 1
     value: 10
   - typeNotification: 0
-    value: 0
+    value: -5
   - typeNotification: 2
-    value: -10
+    value: -15
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Est\xE1 em um dia ruim, mas acaba indo"
+  textSecondOption: Hora do show, bora treinar!
   changeStatusSecondOption:
   - typeNotification: 1
-    value: -10
+    value: 5
   - typeNotification: 0
-    value: 0
+    value: 5
   - typeNotification: 2
     value: 10
   - typeNotification: 3

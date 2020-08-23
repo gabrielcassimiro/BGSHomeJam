@@ -25,20 +25,20 @@ MonoBehaviour:
   - typeNotification: 1
     value: 10
   - typeNotification: 0
-    value: 0
-  - typeNotification: 2
     value: -10
+  - typeNotification: 2
+    value: -15
   - typeNotification: 3
-    value: 0
+    value: -10
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Assistir um filme com pipoca
+  textSecondOption: Chamar os amigos para ver um filme em casa
   changeStatusSecondOption:
   - typeNotification: 1
     value: 10
   - typeNotification: 0
-    value: 0
+    value: 10
   - typeNotification: 2
-    value: 0
+    value: -20
   - typeNotification: 3
     value: 0
   sequenceSecondOption: {fileID: 0}

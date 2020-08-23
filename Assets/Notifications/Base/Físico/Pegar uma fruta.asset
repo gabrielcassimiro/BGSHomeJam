@@ -23,7 +23,7 @@ MonoBehaviour:
   textFirstOption: "Comprar fruta em promo\xE7\xE3o"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 0
+    value: 5
   - typeNotification: 0
     value: 0
   - typeNotification: 2
@@ -31,10 +31,10 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o comprar fruta em promo\xE7\xE3o"
+  textSecondOption: "Ignorar a promo\xE7\xE3o e comprar um pudim"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
+    value: 10
   - typeNotification: 0
     value: 0
   - typeNotification: 2

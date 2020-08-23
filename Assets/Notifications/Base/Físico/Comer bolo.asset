@@ -28,7 +28,7 @@ MonoBehaviour:
   - typeNotification: 0
     value: 0
   - typeNotification: 2
-    value: -10
+    value: -20
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
@@ -36,7 +36,7 @@ MonoBehaviour:
     vontade)"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: -10
+    value: -20
   - typeNotification: 0
     value: 0
   - typeNotification: 2

@@ -28,19 +28,19 @@ MonoBehaviour:
   - typeNotification: 0
     value: 0
   - typeNotification: 2
-    value: -10
+    value: -20
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
   textSecondOption: "Sai para correr. (Parece que est\xE1 tudo em ordem, mas ficou
-    gripado)"
+    resfriado)"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 10
+    value: -5
   - typeNotification: 0
     value: 0
   - typeNotification: 2
-    value: -10
+    value: 15
   - typeNotification: 3
     value: 0
   sequenceSecondOption: {fileID: 0}
