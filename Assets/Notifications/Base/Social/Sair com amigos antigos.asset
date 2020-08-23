@@ -17,13 +17,13 @@ MonoBehaviour:
   messageNotification: Sair com amigos antigos
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
-  repeat: 0
-  newNotification: 0
+  repeat: 1
+  newNotification: 1
   newNotificationObject: {fileID: 0}
   textFirstOption: "Ir. Rever os amigos \xE9 sempre bom"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 0
+    value: 5
   - typeNotification: 0
     value: 10
   - typeNotification: 2

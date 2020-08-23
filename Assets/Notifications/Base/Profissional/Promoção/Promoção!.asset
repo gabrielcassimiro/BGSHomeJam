@@ -10,37 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Jogar Online
+  m_Name: "Promo\xE7\xE3o!"
   m_EditorClassIdentifier: 
   typeNotification: 0
   titleNotification: 
-  messageNotification: Jogar online - Call com o amigo
+  messageNotification: "Parab\xE9ns! Voc\xEA foi promovido."
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
-  repeat: 1
+  repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Voc\xEA fica feliz, mas n\xE3o descansa"
+  textFirstOption: "Relaxa, voc\xEA foi promovido!"
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
   - typeNotification: 0
-    value: 10
-  - typeNotification: 2
-    value: -10
-  - typeNotification: 3
     value: 0
+  - typeNotification: 2
+    value: 0
+  - typeNotification: 3
+    value: 15
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o joga para descansar"
+  textSecondOption: "Relaxa, voc\xEA foi realmente  promovido!"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
-  - typeNotification: 0
-    value: -10
-  - typeNotification: 2
     value: 10
-  - typeNotification: 3
+  - typeNotification: 0
     value: 0
+  - typeNotification: 2
+    value: 0
+  - typeNotification: 3
+    value: 15
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

@@ -10,41 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Jogar Online
+  m_Name: Ganhou um sorteio
   m_EditorClassIdentifier: 
-  typeNotification: 0
+  typeNotification: 3
   titleNotification: 
-  messageNotification: Jogar online - Call com o amigo
+  messageNotification: "Ganhou sorteio \u2013 Mas para isso tem que ir embora mais
+    cedo em um dia que tem reuni\xE3o com o chefe."
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
-  repeat: 1
+  repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Voc\xEA fica feliz, mas n\xE3o descansa"
+  textFirstOption: "Como \xE9 uma reuni\xE3o muito importante, prefere ficar e n\xE3o
+    se ferrar com o chefe"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 10
-  - typeNotification: 0
-    value: 10
-  - typeNotification: 2
     value: -10
-  - typeNotification: 3
+  - typeNotification: 0
     value: 0
+  - typeNotification: 2
+    value: 0
+  - typeNotification: 3
+    value: 15
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o joga para descansar"
+  textSecondOption: "Est\xE1 precisando do dinheiro sorteado, al\xE9m de ter ficado
+    muito feliz de ganhar. Vai atr\xE1s do pr\xEAmio"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
-  - typeNotification: 0
-    value: -10
-  - typeNotification: 2
     value: 10
-  - typeNotification: 3
+  - typeNotification: 0
     value: 0
+  - typeNotification: 2
+    value: 0
+  - typeNotification: 3
+    value: -15
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0
-  affectWork: 0
+  affectWork: 1
   employmentStatus: 0
   affectsStudies: 0
   studiesStatus: 0
