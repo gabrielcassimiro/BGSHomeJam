@@ -26,10 +26,6 @@ MonoBehaviour:
     value: 10
   - typeNotification: 0
     value: 10
-  - typeNotification: 2
-    value: 0
-  - typeNotification: 3
-    value: 0
   sequenceFirstOption: {fileID: 0}
   textSecondOption: "Eu n\xE3o gosto de voc\xEA do mesmo jeito..."
   changeStatusSecondOption:
@@ -37,10 +33,6 @@ MonoBehaviour:
     value: -10
   - typeNotification: 0
     value: -10
-  - typeNotification: 2
-    value: 0
-  - typeNotification: 3
-    value: 0
   sequenceSecondOption: {fileID: 0}
   affectingDating: 1
   datingStatus: 0

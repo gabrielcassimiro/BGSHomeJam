@@ -20,10 +20,10 @@ MonoBehaviour:
   repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Brigar.
+  textFirstOption: Brigar
   changeStatusFirstOption:
   - typeNotification: 1
-    value: -10
+    value: -15
   - typeNotification: 0
     value: -10
   - typeNotification: 2

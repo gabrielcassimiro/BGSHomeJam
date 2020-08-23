@@ -23,24 +23,14 @@ MonoBehaviour:
   textFirstOption: "Voc\xEA responde e fica preocupado"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: -10
+    value: -5
   - typeNotification: 0
     value: 10
-  - typeNotification: 2
-    value: 0
-  - typeNotification: 3
-    value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Est\xE1 cansado da vida, n\xE3o se importa com nada "
+  textSecondOption: Ignorar a mensagem
   changeStatusSecondOption:
-  - typeNotification: 1
-    value: 10
   - typeNotification: 0
     value: -10
-  - typeNotification: 2
-    value: 0
-  - typeNotification: 3
-    value: 0
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

@@ -32,12 +32,12 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Eu gosto muito de voc\xEA, mas da nossa amizade."
+  textSecondOption: "Eu gosto muito de voc\xEA, mas da nossa amizade"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 10
+    value: -5
   - typeNotification: 0
-    value: 0
+    value: 10
   - typeNotification: 2
     value: 0
   - typeNotification: 3

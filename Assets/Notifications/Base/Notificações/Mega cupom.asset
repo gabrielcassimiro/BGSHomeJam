@@ -22,25 +22,17 @@ MonoBehaviour:
   newNotificationObject: {fileID: 0}
   textFirstOption: Comprar
   changeStatusFirstOption:
-  - typeNotification: 1
-    value: 0
-  - typeNotification: 0
-    value: 0
   - typeNotification: 2
-    value: 10
-  - typeNotification: 3
-    value: 0
+    value: 5
+  - typeNotification: 1
+    value: 5
   sequenceFirstOption: {fileID: 0}
   textSecondOption: Queria para hamburguer
   changeStatusSecondOption:
   - typeNotification: 1
     value: -5
-  - typeNotification: 0
-    value: 0
   - typeNotification: 2
-    value: 10
-  - typeNotification: 3
-    value: 0
+    value: -5
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

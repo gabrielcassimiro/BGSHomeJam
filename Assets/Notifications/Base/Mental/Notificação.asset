@@ -14,33 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeNotification: 1
   titleNotification: ?????
-  messageNotification: "Somente notifica\xE7\xE3o"
+  messageNotification: "Liga\xE7\xE3o de Telemarketing"
   notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Ningu\xE9m lembra de mim"
+  textFirstOption: Atender
   changeStatusFirstOption:
   - typeNotification: 1
     value: -10
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
-  - typeNotification: 3
-    value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Quanta coisa chata
-  changeStatusSecondOption:
-  - typeNotification: 1
-    value: 10
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
-  - typeNotification: 3
-    value: 0
+  textSecondOption: "N\xE3o atender"
+  changeStatusSecondOption: []
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

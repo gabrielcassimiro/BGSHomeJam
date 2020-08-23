@@ -36,7 +36,7 @@ MonoBehaviour:
   textSecondOption: Ignorar
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
+    value: -10
   - typeNotification: 0
     value: -10
   - typeNotification: 2

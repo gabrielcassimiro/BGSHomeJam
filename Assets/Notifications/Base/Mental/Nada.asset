@@ -13,18 +13,22 @@ MonoBehaviour:
   m_Name: Nada
   m_EditorClassIdentifier: 
   typeNotification: 1
-  titleNotification: ????
-  messageNotification: Nada
+  titleNotification: Hora do livro
+  messageNotification: Ler um livro
   notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Vai responder nada com nada?
-  changeStatusFirstOption: []
+  textFirstOption: Ler
+  changeStatusFirstOption:
+  - typeNotification: 1
+    value: 10
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Literalmente nada!
-  changeStatusSecondOption: []
+  textSecondOption: "N\xE3o ler"
+  changeStatusSecondOption:
+  - typeNotification: 1
+    value: -10
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

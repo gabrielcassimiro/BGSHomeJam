@@ -13,18 +13,22 @@ MonoBehaviour:
   m_Name: "Notifica\xE7\xE3o"
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: ERROR
-  messageNotification: "%username% Notifica\xE7\xE3o"
+  titleNotification: 'ERROR '
+  messageNotification: '%username% Bug no sistema'
   notificationPrefab: {fileID: 619430876291953969, guid: 509e2073ed10b36409ad2944d02765d3,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "S\xF3 serviu para te encher o saco"
-  changeStatusFirstOption: []
+  textFirstOption: "Ficar apertando o bot\xE3o de fechar"
+  changeStatusFirstOption:
+  - typeNotification: 1
+    value: -10
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "S\xF3 serviu para te encher o saco"
-  changeStatusSecondOption: []
+  textSecondOption: Reiniciar o aplicativo
+  changeStatusSecondOption:
+  - typeNotification: 1
+    value: 5
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

@@ -14,31 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeNotification: 0
   titleNotification: ENGLISH NOW!
-  messageNotification: Go?
+  messageNotification: Time to study!!
   notificationPrefab: {fileID: 619430876291953969, guid: 509e2073ed10b36409ad2944d02765d3,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Go GO
+  textFirstOption: Estudar
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 0
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
-  - typeNotification: 3
     value: 10
+  - typeNotification: 3
+    value: 5
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Ignorar, porque est\xE1 ocupado"
+  textSecondOption: "Ignorar, porque est\xE1 ocupado "
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
+    value: -10
   - typeNotification: 3
     value: -10
   sequenceSecondOption: {fileID: 0}

@@ -24,23 +24,15 @@ MonoBehaviour:
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
-  - typeNotification: 0
-    value: 0
   - typeNotification: 2
-    value: 0
-  - typeNotification: 3
-    value: 0
+    value: 5
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Promo\xE7\xE3o \xE9 comigo mesmo!"
+  textSecondOption: 'Na verdade eu queria cancelar '
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
-  - typeNotification: 0
-    value: 0
+    value: -5
   - typeNotification: 2
-    value: 10
-  - typeNotification: 3
-    value: 0
+    value: -10
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

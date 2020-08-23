@@ -13,34 +13,24 @@ MonoBehaviour:
   m_Name: "Voc\xEA \xE9 importante"
   m_EditorClassIdentifier: 
   typeNotification: 1
-  titleNotification: ??????
-  messageNotification: "Voc\xEA \xE9 importante"
+  titleNotification: Piramide
+  messageNotification: "Voc\xEA \xE9 importante venha participar do nosso grupo"
   notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Agradece
+  textFirstOption: Agradecer e negar
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
-  - typeNotification: 3
-    value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o entende nada"
+  textSecondOption: "N\xE3o entende nada e aceita"
   changeStatusSecondOption:
   - typeNotification: 1
     value: -10
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
   - typeNotification: 3
-    value: 0
+    value: -10
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0
