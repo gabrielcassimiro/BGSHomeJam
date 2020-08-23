@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Convite para beber
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
+  titleNotification: Coleguinha
   messageNotification: Galera combinou de ir pro role tomar uma cerveja, bora?
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0

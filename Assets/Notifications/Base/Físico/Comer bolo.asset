@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Comer bolo
   m_EditorClassIdentifier: 
   typeNotification: 2
-  titleNotification: 
-  messageNotification: "Oferecem um peda\xE7o de bolo para voc\xEA."
-  notificationPrefab: {fileID: 6544865300836683170, guid: 7c4e4bb6d30c276418d0be36fa07d5e5,
+  titleNotification: "Peda\xE7o de bolo"
+  messageNotification: "Voc\xEA est\xE1 com vontade de comer bolo."
+  notificationPrefab: {fileID: 850789642281990547, guid: 44df6ba1ea9049346a6aaf4e07785f9e,
     type: 3}
   repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Comer. Te proporcionar\xE1 prazer, mas voc\xEA est\xE1 reclamando
-    da gordura."
+  textFirstOption: "Comprar. (Te proporcionar\xE1 prazer, mas voc\xEA est\xE1 reclamando
+    da gordura)"
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
@@ -32,8 +32,8 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o comer.  Teu corpo agradece, mas vai ficar querendo o
-    peda\xE7o. "
+  textSecondOption: "N\xE3o comprar.  (Seu corpo agradece, mas vai continuar com
+    vontade)"
   changeStatusSecondOption:
   - typeNotification: 1
     value: -10

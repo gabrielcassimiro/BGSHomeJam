@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Passear com o cachorro
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: Passear com o cachorro do amigo
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  titleNotification: Amigo
+  messageNotification: Pode passear com o meu cachorro?
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Ir
+  textFirstOption: Vou sim!
   changeStatusFirstOption:
   - typeNotification: 1
     value: 5
@@ -31,7 +31,7 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Ir novamente, quem recusa um doguinho?
+  textSecondOption: Claro, quem recusa um doguinho?
   changeStatusSecondOption:
   - typeNotification: 1
     value: 10

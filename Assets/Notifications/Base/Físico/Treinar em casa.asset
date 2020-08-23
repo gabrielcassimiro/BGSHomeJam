@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Treinar em casa
   m_EditorClassIdentifier: 
   typeNotification: 2
-  titleNotification: 
+  titleNotification: Hora do treino!
   messageNotification: Treinar em casa
   notificationPrefab: {fileID: 6544865300836683170, guid: 7c4e4bb6d30c276418d0be36fa07d5e5,
     type: 3}

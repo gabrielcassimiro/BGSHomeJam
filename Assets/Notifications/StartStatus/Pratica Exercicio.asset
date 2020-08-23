@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeNotification: 0
   titleNotification: Seu Perfil
-  messageNotification: "Pratica exerc\xEDcio com frequ\xEAncia?"
+  messageNotification: "Pr\xE1tica exerc\xEDcio com frequ\xEAncia?"
   notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 0

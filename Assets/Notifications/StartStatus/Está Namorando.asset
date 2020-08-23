@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeNotification: 0
   titleNotification: Seu Perfil
-  messageNotification: "Est\xE1 Namorando? "
+  messageNotification: "Est\xE1 namorando? "
   notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 0

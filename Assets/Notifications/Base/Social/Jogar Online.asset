@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Jogar Online
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: Jogar online - Call com o amigo
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  titleNotification: Amigo das calls
+  messageNotification: Bora jogar online?
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Voc\xEA fica feliz, mas n\xE3o descansa"
+  textFirstOption: "Bora! (Voc\xEA fica feliz, mas n\xE3o descansa)"
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
@@ -31,7 +31,7 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o joga para descansar"
+  textSecondOption: "Hoje n\xE3o d\xE1. (N\xE3o joga para descansar)"
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0

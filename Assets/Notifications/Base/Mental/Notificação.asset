@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: "Notifica\xE7\xE3o"
   m_EditorClassIdentifier: 
   typeNotification: 1
-  titleNotification: 
+  titleNotification: ?????
   messageNotification: "Somente notifica\xE7\xE3o"
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0

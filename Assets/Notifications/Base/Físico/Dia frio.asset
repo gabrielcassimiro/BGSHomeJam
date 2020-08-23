@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Dia frio
   m_EditorClassIdentifier: 
   typeNotification: 2
-  titleNotification: 
+  titleNotification: Tempo agora
   messageNotification: Dia frio
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
-  repeat: 0
+  repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Comer muito chocolate. D\xE1 a sensa\xE7\xE3o de al\xEDvio, mas
-    as gordurinhas t\xE3o batendo"
+  textFirstOption: "Comer muito chocolate. (D\xE1 a sensa\xE7\xE3o de al\xEDvio,
+    mas as gordurinhas t\xE3o batendo)"
   changeStatusFirstOption:
   - typeNotification: 1
     value: 0
@@ -32,8 +32,8 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Sai para correr. Parece que est\xE1 tudo em ordem, mas ficou
-    gripado"
+  textSecondOption: "Sai para correr. (Parece que est\xE1 tudo em ordem, mas ficou
+    gripado)"
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0

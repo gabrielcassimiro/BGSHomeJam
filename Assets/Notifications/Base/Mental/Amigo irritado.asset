@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Amigo irritado
   m_EditorClassIdentifier: 
   typeNotification: 1
-  titleNotification: 
-  messageNotification: 'Amigo '
+  titleNotification: Amigo
+  messageNotification: "S\xF3 lembra de mim quando precisa, seu vacil\xE3o?? "
   notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
     type: 3}
   repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Brigar
+  textFirstOption: Brigar. Vestibulum enim diam, scelerisque sit amet enim quis,
+    lacinia feugiat metus. Aenean mattis eget lectus nec convallis. Nulla quis varius
+    erat. Vivamus imperdiet nunc ante, viverra sollicitudin massa ultrices eu.
   changeStatusFirstOption:
   - typeNotification: 1
     value: -10

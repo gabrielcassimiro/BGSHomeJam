@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: Pegar uma fruta
   m_EditorClassIdentifier: 
   typeNotification: 2
-  titleNotification: 
-  messageNotification: Pegar uma fruta
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  titleNotification: Dia da fruta
+  messageNotification: Comprar uma fruta
+  notificationPrefab: {fileID: 6544865300836683170, guid: 7c4e4bb6d30c276418d0be36fa07d5e5,
     type: 3}
   repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Experimenta a fruta, vai perceber que est\xE1 podre"
+  textFirstOption: "Comprar fruta em promo\xE7\xE3o. (Quando chega percebe que est\xE1
+    podre)"
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
@@ -31,7 +32,8 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Guarda na bolsa e esquece nela
+  textSecondOption: "Comprar fruta em promo\xE7\xE3o. (Guarda na bolsa e esquece
+    nela)"
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0

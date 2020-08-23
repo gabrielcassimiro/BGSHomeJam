@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dia de chuva
   m_EditorClassIdentifier: 
   typeNotification: 2
-  titleNotification: 
+  titleNotification: Tempo agora
   messageNotification: Dia de chuva
   notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}

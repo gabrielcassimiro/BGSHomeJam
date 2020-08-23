@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "N\xE3o treinar"
   m_EditorClassIdentifier: 
   typeNotification: 2
-  titleNotification: 
+  titleNotification: Vamos treinar?
   messageNotification: "N\xE3o treinar"
   notificationPrefab: {fileID: 6544865300836683170, guid: 7c4e4bb6d30c276418d0be36fa07d5e5,
     type: 3}
@@ -21,7 +21,7 @@ MonoBehaviour:
   newNotification: 0
   newNotificationObject: {fileID: 0}
   textFirstOption: "Est\xE1 em um dia ruim, ent\xE3o prefere n\xE3o treinar e fica
-    jogando. "
+    jogando"
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10

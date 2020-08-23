@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: "App ingl\xEAs"
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: Duas linguas - ENGLISH NOW!
+  titleNotification: ENGLISH NOW!
+  messageNotification: Go?
   notificationPrefab: {fileID: 619430876291953969, guid: 509e2073ed10b36409ad2944d02765d3,
     type: 3}
   repeat: 1

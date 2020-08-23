@@ -10,35 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: "Voc\xEA \xE9 importante"
+  m_Name: Promo Fit
   m_EditorClassIdentifier: 
-  typeNotification: 1
-  titleNotification: ??????
-  messageNotification: "Voc\xEA \xE9 importante"
-  notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
+  typeNotification: 2
+  titleNotification: "Vem que \xE9 promo!"
+  messageNotification: "Promo\xE7\xE3o para seu plano."
+  notificationPrefab: {fileID: 6544865300836683170, guid: 7c4e4bb6d30c276418d0be36fa07d5e5,
     type: 3}
-  repeat: 1
+  repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Agradece
+  textFirstOption: "Meu plano j\xE1 \xE9 o suficiente."
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 10
+    value: 5
   - typeNotification: 0
-    value: 10
+    value: 0
   - typeNotification: 2
     value: 0
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Agradece
+  textSecondOption: "Promo\xE7\xE3o \xE9 comigo mesmo!"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 10
-  - typeNotification: 0
-    value: 10
-  - typeNotification: 2
     value: 0
+  - typeNotification: 0
+    value: 0
+  - typeNotification: 2
+    value: 5
   - typeNotification: 3
     value: 0
   sequenceSecondOption: {fileID: 0}

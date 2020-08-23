@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: "Notifica\xE7\xE3o"
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: "Notifica\xE7\xE3o"
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  titleNotification: ERROR
+  messageNotification: "%username% Notifica\xE7\xE3o"
+  notificationPrefab: {fileID: 619430876291953969, guid: 509e2073ed10b36409ad2944d02765d3,
     type: 3}
   repeat: 1
   newNotification: 0

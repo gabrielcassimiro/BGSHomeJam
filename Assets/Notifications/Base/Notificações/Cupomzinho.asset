@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cupomzinho
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
+  titleNotification: Cupom
   messageNotification: CHEGOU CUPOM!
   notificationPrefab: {fileID: 850789642281990547, guid: 44df6ba1ea9049346a6aaf4e07785f9e,
     type: 3}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Futebol
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: Leo Dantas
+  titleNotification: Colega de fut
   messageNotification: Bora jogar um futebol?
   notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
     type: 3}

@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Nada
   m_EditorClassIdentifier: 
   typeNotification: 1
-  titleNotification: 
+  titleNotification: ????
   messageNotification: Nada
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Vai responde nada com nada?
+  textFirstOption: Vai responder nada com nada?
   changeStatusFirstOption: []
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Literalmente nada.
+  textSecondOption: Literalmente nada!
   changeStatusSecondOption: []
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0

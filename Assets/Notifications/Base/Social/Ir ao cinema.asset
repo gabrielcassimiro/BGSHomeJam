@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Ir ao cinema
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: Ir ao cinema com os amigos
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  titleNotification: Cinema
+  messageNotification: Bora ir ao cinema com os amigos?
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Relaxar
+  textFirstOption: Ir para relaxar.
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 0
+    value: 10
   - typeNotification: 0
     value: 0
   - typeNotification: 2
@@ -31,8 +31,16 @@ MonoBehaviour:
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: 
-  changeStatusSecondOption: []
+  textSecondOption: "Vai l\xE1 relaxar!"
+  changeStatusSecondOption:
+  - typeNotification: 1
+    value: 10
+  - typeNotification: 0
+    value: 0
+  - typeNotification: 2
+    value: 0
+  - typeNotification: 3
+    value: 0
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

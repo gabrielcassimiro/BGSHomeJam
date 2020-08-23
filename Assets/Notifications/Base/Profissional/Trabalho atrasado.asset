@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Trabalho atrasado
   m_EditorClassIdentifier: 
   typeNotification: 3
-  titleNotification: 
+  titleNotification: Professor
   messageNotification: 'Trabalho atrasado '
   notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
     type: 3}

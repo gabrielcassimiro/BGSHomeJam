@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: "Religi\xE3o"
   m_EditorClassIdentifier: 
   typeNotification: 1
-  titleNotification: 
-  messageNotification: Mensagem da tia religiosa
-  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
+  titleNotification: Tia religiosa
+  messageNotification: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Morbi scelerisque gravida diam id cursus. Aliquam finibus ex non interdum semper.
+    Integer et maximus metus, et eleifend elit. '
+  notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
     type: 3}
   repeat: 1
   newNotification: 0

@@ -10,20 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Spawn
+  m_Name: Mega cupom
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: Spawn
-  notificationPrefab: {fileID: 0}
-  repeat: 0
+  titleNotification: Fitpom
+  messageNotification: Cupom para comida fit
+  notificationPrefab: {fileID: 850789642281990547, guid: 44df6ba1ea9049346a6aaf4e07785f9e,
+    type: 3}
+  repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Spawn nosso de cada dia
-  changeStatusFirstOption: []
+  textFirstOption: Comprar
+  changeStatusFirstOption:
+  - typeNotification: 1
+    value: 0
+  - typeNotification: 0
+    value: 0
+  - typeNotification: 2
+    value: 10
+  - typeNotification: 3
+    value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: 
-  changeStatusSecondOption: []
+  textSecondOption: Queria para hamburguer
+  changeStatusSecondOption:
+  - typeNotification: 1
+    value: -5
+  - typeNotification: 0
+    value: 0
+  - typeNotification: 2
+    value: 5
+  - typeNotification: 3
+    value: 0
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0
