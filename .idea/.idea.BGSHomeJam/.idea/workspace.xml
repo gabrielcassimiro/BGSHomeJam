@@ -20,6 +20,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartStatusPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/52/0566ebd0/Notification.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StatusManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/DaysOfWeek.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -32,10 +33,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartStatusPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StatusManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable/NotificationObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ListNotifications.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NotificationPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/DaysOfWeek.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +90,7 @@
       <updated>1598061354463</updated>
       <workItem from="1598061364783" duration="3476000" />
       <workItem from="1598070844840" duration="4601000" />
-      <workItem from="1598088428014" duration="29808000" />
+      <workItem from="1598088428014" duration="32699000" />
     </task>
     <servers />
   </component>
