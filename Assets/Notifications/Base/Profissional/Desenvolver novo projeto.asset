@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 3
   titleNotification: Chefe
   messageNotification: "Ol\xE1! N\xE3o se esque\xE7a do novo projeto."
-  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 0
   newNotification: 1
@@ -25,12 +25,8 @@ MonoBehaviour:
   changeStatusFirstOption:
   - typeNotification: 1
     value: -10
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
   - typeNotification: 3
-    value: 20
+    value: 10
   sequenceFirstOption: {fileID: 0}
   textSecondOption: Desenvolve em grupo e aprende muita coisa
   changeStatusSecondOption:
@@ -38,10 +34,8 @@ MonoBehaviour:
     value: 10
   - typeNotification: 0
     value: 10
-  - typeNotification: 2
-    value: 0
   - typeNotification: 3
-    value: 5
+    value: 20
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

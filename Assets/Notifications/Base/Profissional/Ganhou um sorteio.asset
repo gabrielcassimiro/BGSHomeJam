@@ -14,36 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeNotification: 3
   titleNotification: Sorteador
-  messageNotification: "Ganhou sorteio \u2013 Mas para isso tem que ir embora mais
-    cedo em um dia que tem reuni\xE3o com o chefe."
-  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
+  messageNotification: "Voc\xEA ganhou um sorteio, mas precisa vir hoje pegar"
+  notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
     type: 3}
   repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Como \xE9 uma reuni\xE3o muito importante, prefere ficar e n\xE3o
-    se ferrar com o chefe"
+  textFirstOption: "Ir buscar e ignorar uma reuni\xE3o"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: -10
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
+    value: 10
   - typeNotification: 3
-    value: 15
+    value: 20
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Est\xE1 precisando do dinheiro sorteado, al\xE9m de ter ficado
-    muito feliz de ganhar. Vai atr\xE1s do pr\xEAmio"
+  textSecondOption: "N\xE3o ir porque tem uma reuni\xE3o importante"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 10
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
+    value: -20
   - typeNotification: 3
-    value: -15
+    value: 20
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

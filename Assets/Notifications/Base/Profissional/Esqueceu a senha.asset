@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 3
   titleNotification: "Voc\xEA"
   messageNotification: Solicita o esqueceu a senha
-  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
+  notificationPrefab: {fileID: 619430876291953969, guid: 509e2073ed10b36409ad2944d02765d3,
     type: 3}
   repeat: 0
   newNotification: 0
@@ -29,9 +29,9 @@ MonoBehaviour:
   - typeNotification: 2
     value: 0
   - typeNotification: 3
-    value: -10
+    value: -15
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: 'Solicita o pin pelo celular. '
+  textSecondOption: Tem autenticador de dois fatores
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0

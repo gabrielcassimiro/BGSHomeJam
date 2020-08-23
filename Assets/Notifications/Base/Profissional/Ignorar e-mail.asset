@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Ignorar e-mail
   m_EditorClassIdentifier: 
   typeNotification: 3
-  titleNotification: "Algu\xE9m"
-  messageNotification: "Algu\xE9m do trabalho envia um e-mail qualquer para todos
-    os destinat\xE1rios"
-  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
+  titleNotification: "Algu\xE9m do trabalho"
+  messageNotification: "Mensagem aleat\xF3ria do trabalho"
+  notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
     type: 3}
   repeat: 0
   newNotification: 0
@@ -25,14 +24,10 @@ MonoBehaviour:
   changeStatusFirstOption:
   - typeNotification: 1
     value: 0
-  - typeNotification: 0
-    value: 0
-  - typeNotification: 2
-    value: 0
   - typeNotification: 3
     value: 10
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "Ignorar, sempre e-mail in\xFAteis"
+  textSecondOption: "Ignorar porque \xE9 sempre inutil "
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0
