@@ -35,9 +35,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StatusManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scriptable/NotificationObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ListNotifications.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NotificationPrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/DaysOfWeek.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NotificationPrefab.cs" />
       </list>
     </option>
   </component>
@@ -99,7 +99,7 @@
       <workItem from="1598061364783" duration="3476000" />
       <workItem from="1598070844840" duration="4601000" />
       <workItem from="1598088428014" duration="33298000" />
-      <workItem from="1598175134018" duration="529000" />
+      <workItem from="1598175134018" duration="2367000" />
     </task>
     <servers />
   </component>

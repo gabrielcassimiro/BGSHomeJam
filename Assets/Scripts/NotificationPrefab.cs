@@ -1,14 +1,15 @@
 ﻿using System;
 using Scriptable;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class NotificationPrefab : MonoBehaviour
 {
-    [SerializeField] private Text title = null;
-    [SerializeField] private Text text = null;
-    [SerializeField] private Text firstOptionText = null;
-    [SerializeField] private Text secondOptionText = null;
+    [SerializeField] private TextMeshProUGUI title = null;
+    [SerializeField] private TextMeshProUGUI text = null;
+    [SerializeField] private TextMeshProUGUI firstOptionText = null;
+    [SerializeField] private TextMeshProUGUI secondOptionText = null;
     [SerializeField] private Button firstOption = null;
     [SerializeField] private Button secondOption = null;
 
@@ -20,13 +21,6 @@ public class NotificationPrefab : MonoBehaviour
         if (firstOptionText) firstOptionText.text = notificationObject.textFirstOption;
         if (secondOptionText) secondOptionText.text = notificationObject.textSecondOption;
         ListNotifications listNotifications = GameController.Instance.GetListNotification();
-        if (notificationObject.newNotification)
-        {
-            if (!listNotifications.extraNotifications.Contains(notificationObject.newNotificationObject))
-            {
-                listNotifications.extraNotifications.Add(notificationObject.newNotificationObject);
-            }
-        }
 
         if (!notificationObject.repeat)
         {
@@ -59,7 +53,15 @@ public class NotificationPrefab : MonoBehaviour
             if (notificationObject.sequenceFirstOption != null)
                 specificAction?.Invoke(notificationObject.sequenceFirstOption);
             else action?.Invoke();
-            ;
+            
+            if (notificationObject.newNotification)
+            {
+                if (!listNotifications.extraNotifications.Contains(notificationObject.newNotificationObject))
+                {
+                    listNotifications.extraNotifications.Add(notificationObject.newNotificationObject);
+                }
+            }
+            
             GameController.Instance.ChangeStatus(notificationObject.changeStatusFirstOption);
             Destroy(gameObject);
         });
@@ -79,7 +81,15 @@ public class NotificationPrefab : MonoBehaviour
             if (notificationObject.sequenceSecondOption != null)
                 specificAction?.Invoke(notificationObject.sequenceSecondOption);
             else action?.Invoke();
-            ;
+            
+            if (notificationObject.newNotification)
+            {
+                if (!listNotifications.extraNotifications.Contains(notificationObject.newNotificationObject))
+                {
+                    listNotifications.extraNotifications.Add(notificationObject.newNotificationObject);
+                }
+            }
+            
             GameController.Instance.ChangeStatus(notificationObject.changeStatusSecondOption);
             Destroy(gameObject);
         });
