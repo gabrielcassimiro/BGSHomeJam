@@ -20,7 +20,7 @@ MonoBehaviour:
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Vai e ficar de ressaca
+  textFirstOption: Vai e fica de ressaca
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
