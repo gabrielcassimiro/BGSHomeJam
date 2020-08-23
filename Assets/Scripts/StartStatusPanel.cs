@@ -23,7 +23,7 @@ public class StartStatusPanel : MonoBehaviour
         }
         else
         {
-            GameController.Instance.NewNotification();
+            GameController.Instance.CallEnumerator();
         }
 
         _count++;

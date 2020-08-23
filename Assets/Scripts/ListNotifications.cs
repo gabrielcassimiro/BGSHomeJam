@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Scriptable;
 using UnityEngine;
 
@@ -9,6 +10,19 @@ public class ListNotifications : MonoBehaviour
     public List<NotificationObject> workingNotifications = new List<NotificationObject>();
     public List<NotificationObject> studyingNotifications = new List<NotificationObject>();
     public List<NotificationObject> extraNotifications = new List<NotificationObject>();
+
+    public bool GetSingleNotifications()
+    {
+        var baseNot = baseNotifications.Where(b => b.repeat == false).ToList();
+        var datingNot = datingNotifications.Where(b => b.repeat == false).ToList();
+        var workingNot = workingNotifications.Where(b => b.repeat == false).ToList();
+        var studyingNot = studyingNotifications.Where(b => b.repeat == false).ToList();
+        var extraNot = extraNotifications.Where(b => b.repeat == false).ToList();
+
+        var value = baseNot.Count == 0 && datingNot.Count == 0 && workingNot.Count == 0 && studyingNot.Count == 0 &&
+                    extraNot.Count == 0;
+        return value;
+    }
 
     public NotificationObject GetNotification(bool dating, bool working, bool studying)
     {

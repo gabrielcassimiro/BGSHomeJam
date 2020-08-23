@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dayHourText = null;
     public static bool PlayGame = true;
     [SerializeField] private float timeToNextNotification = 1.0f;
-
+    [SerializeField] private int countToWinGame;
     [Header("Social Status")] public bool isDating = false;
     public bool isWorking = false;
     public bool isStudying = false;
@@ -74,21 +74,38 @@ public class GameController : MonoBehaviour
 
     public void NewNotification(NotificationObject notificationObject = null)
     {
+        if (!CheckStatusOfGame())
+        {
+            
+        }
+        
         if (PlayGame)
         {
-            DaysManager();
-            if (!notificationObject)
+            if (CheckStatusOfGame())
             {
-                var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
-                var go = Instantiate(notification.notificationPrefab, notificationParent);
-                var prefab = go.GetComponent<NotificationPrefab>();
-                prefab.Init(notification, CallEnumerator, NewSpecificNotification);
+                countToWinGame++;
+            }
+
+            if (countToWinGame <= 5)
+            {
+                DaysManager();
+                if (!notificationObject)
+                {
+                    var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
+                    var go = Instantiate(notification.notificationPrefab, notificationParent);
+                    var prefab = go.GetComponent<NotificationPrefab>();
+                    prefab.Init(notification, CallEnumerator, NewSpecificNotification);
+                }
+                else
+                {
+                    var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
+                    var prefab = go.GetComponent<NotificationPrefab>();
+                    prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
+                }
             }
             else
             {
-                var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
-                var prefab = go.GetComponent<NotificationPrefab>();
-                prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
+                WinMatch();
             }
         }
         else
@@ -195,7 +212,7 @@ public class GameController : MonoBehaviour
         StartCoroutine(WaitNewNotification(notificationObject));
     }
 
-    private void CallEnumerator()
+    public void CallEnumerator()
     {
         StartCoroutine(WaitNewNotification());
     }
@@ -207,6 +224,17 @@ public class GameController : MonoBehaviour
         else NewNotification(notificationObject);
     }
 
+    private bool CheckStatusOfGame()
+    {
+        var singleNotifications = listNotifications.GetSingleNotifications();
+        return singleNotifications;
+    }
+
+    public static void WinMatch()
+    {
+        Debug.Log("You Win!");
+    }
+    
     public static void GameOver()
     {
         // Time.timeScale = 0.0f;

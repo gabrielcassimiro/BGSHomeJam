@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 0
   titleNotification: Seu Perfil
   messageNotification: "Est\xE1 Estudando? "
-  notificationPrefab: {fileID: 5637122998460383829, guid: efbdbd2b1b76eac4d95fe2fd8e82e48b,
+  notificationPrefab: {fileID: 2870443146559847826, guid: 2c08b2293926cb845acfc2f4ae0910a6,
     type: 3}
   repeat: 0
   newNotification: 0
