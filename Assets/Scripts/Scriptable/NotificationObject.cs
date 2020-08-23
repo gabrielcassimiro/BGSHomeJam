@@ -11,13 +11,18 @@ namespace Scriptable
         public string titleNotification;
         public string messageNotification;
         public GameObject notificationPrefab;
+        public bool repeat;
+        [Header("New Notification")]
+        public bool newNotification;
+        public NotificationObject newNotificationObject;
+        [Header("First Option")]
         public string textFirstOption;
         public List<Status> changeStatusFirstOption;
         public NotificationObject sequenceFirstOption;
+        [Header("Second Option")]
         public string textSecondOption;
         public List<Status> changeStatusSecondOption;
         public NotificationObject sequenceSecondOption;
-        public bool repeat;
 
         [Header("Dating")]
         public bool affectingDating;

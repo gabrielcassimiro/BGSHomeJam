@@ -10,38 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Test 1
+  m_Name: ExtraTest
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: Teste 1
+  titleNotification: CardExtra
+  messageNotification: CardExtra
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
-  repeat: 1
-  newNotification: 1
-  newNotificationObject: {fileID: 11400000, guid: 6a68f87e4f3cf824d89b133a398562b5,
-    type: 2}
+  repeat: 0
+  newNotification: 0
+  newNotificationObject: {fileID: 0}
   textFirstOption: 
-  changeStatusFirstOption:
-  - typeNotification: 0
-    value: 8
-  - typeNotification: 1
-    value: -7
-  - typeNotification: 2
-    value: 3
-  - typeNotification: 3
-    value: -5
+  changeStatusFirstOption: []
   sequenceFirstOption: {fileID: 0}
   textSecondOption: 
-  changeStatusSecondOption:
-  - typeNotification: 0
-    value: -10
-  - typeNotification: 1
-    value: 10
-  - typeNotification: 2
-    value: -5
-  - typeNotification: 3
-    value: 5
+  changeStatusSecondOption: []
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

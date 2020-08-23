@@ -19,6 +19,14 @@ public class NotificationPrefab : MonoBehaviour
         if (text) text.text = notificationObject.messageNotification;
         if (firstOptionText) firstOptionText.text = notificationObject.textFirstOption;
         if (secondOptionText) secondOptionText.text = notificationObject.textSecondOption;
+        ListNotifications listNotifications = GameController.Instance.GetListNotification();
+        if (notificationObject.newNotification)
+        {
+            if (!listNotifications.extraNotifications.Contains(notificationObject.newNotificationObject))
+            {
+                listNotifications.extraNotifications.Add(notificationObject.newNotificationObject);
+            }
+        }
 
         if (!notificationObject.repeat)
         {
@@ -27,6 +35,12 @@ public class NotificationPrefab : MonoBehaviour
                 listNotification.baseNotifications.Remove(notificationObject);
             else if (listNotification.datingNotifications.Contains(notificationObject))
                 listNotification.datingNotifications.Remove(notificationObject);
+            else if (listNotification.workingNotifications.Contains(notificationObject))
+                listNotification.workingNotifications.Remove(notificationObject);
+            else if (listNotification.studyingNotifications.Contains(notificationObject))
+                listNotification.studyingNotifications.Remove(notificationObject);
+            else if (listNotification.extraNotifications.Contains(notificationObject))
+                listNotification.extraNotifications.Remove(notificationObject);
         }
 
         this.firstOption.onClick.AddListener(() =>
