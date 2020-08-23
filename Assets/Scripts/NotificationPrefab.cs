@@ -45,6 +45,7 @@ public class NotificationPrefab : MonoBehaviour
 
         this.firstOption.onClick.AddListener(() =>
         {
+            firstOption.interactable = false;
             if(_animator != null)
                 _animator.SetTrigger("FirstOption");
             if (notificationObject.firstOptionAffect)
@@ -75,6 +76,7 @@ public class NotificationPrefab : MonoBehaviour
         });
         this.secondOption.onClick.AddListener(() =>
         {
+            secondOption.interactable = false;
             if(_animator != null)
             _animator.SetTrigger("SecondOption");
             if (notificationObject.secondOptionAffect)

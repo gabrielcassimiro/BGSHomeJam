@@ -97,35 +97,47 @@ public class GameController : MonoBehaviour
             if (stat.Value < 1)
             {
                 GameOver();
+                PlayGame = false;
                 Debug.Log("GameOver");
-                break;
+                return;
             }
-        }
-        if (CheckStatusOfGame())
-        {
-            countToWinGame++;
         }
 
-        if (countToWinGame <= 5)
-        {
-            DaysManager();
-            if (!notificationObject)
-            {
-                var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
-                var go = Instantiate(notification.notificationPrefab, notificationParent);
-                var prefab = go.GetComponent<NotificationPrefab>();
-                prefab.Init(notification, CallEnumerator, NewSpecificNotification);
-            }
-            else
-            {
-                var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
-                var prefab = go.GetComponent<NotificationPrefab>();
-                prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
-            }
-        }
-        else
+        if (daysCount > 7)
         {
             WinMatch();
+            PlayGame = false;
+            return;
+        }
+
+        if (PlayGame)
+        {
+            if (CheckStatusOfGame())
+                    {
+                        countToWinGame++;
+                    }
+            
+                    if (countToWinGame <= 5)
+                    {
+                        DaysManager();
+                        if (!notificationObject)
+                        {
+                            var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
+                            var go = Instantiate(notification.notificationPrefab, notificationParent);
+                            var prefab = go.GetComponent<NotificationPrefab>();
+                            prefab.Init(notification, CallEnumerator, NewSpecificNotification);
+                        }
+                        else
+                        {
+                            var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
+                            var prefab = go.GetComponent<NotificationPrefab>();
+                            prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
+                        }
+                    }
+                    else
+                    {
+                        WinMatch();
+                    }
         }
     }
 

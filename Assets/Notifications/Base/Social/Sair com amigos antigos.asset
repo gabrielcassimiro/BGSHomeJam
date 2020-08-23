@@ -32,7 +32,9 @@ MonoBehaviour:
     value: 0
   sequenceFirstOption: {fileID: 0}
   textSecondOption: "Vamos marcar para uma pr\xF3xima vez."
-  changeStatusSecondOption: []
+  changeStatusSecondOption:
+  - typeNotification: 0
+    value: -15
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0
