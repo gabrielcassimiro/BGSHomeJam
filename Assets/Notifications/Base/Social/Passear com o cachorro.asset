@@ -20,16 +20,16 @@ MonoBehaviour:
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: Vou sim!
+  textFirstOption: Putz, to muito ocupado com o trabalho.
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 5
+    value: 0
   - typeNotification: 0
-    value: 5
+    value: 0
   - typeNotification: 2
     value: 0
   - typeNotification: 3
-    value: 0
+    value: 10
   sequenceFirstOption: {fileID: 0}
   textSecondOption: Claro, quem recusa um doguinho?
   changeStatusSecondOption:

@@ -31,7 +31,7 @@ MonoBehaviour:
   - typeNotification: 3
     value: 10
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: Tem certeza???
+  textSecondOption: "Ignorar, porque est\xE1 ocupado"
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0

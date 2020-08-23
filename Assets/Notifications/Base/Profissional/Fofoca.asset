@@ -15,7 +15,7 @@ MonoBehaviour:
   typeNotification: 3
   titleNotification: MAILGRUP-TAMTAM
   messageNotification: Fofoca
-  notificationPrefab: {fileID: 7527897866055395097, guid: c04cbff7be7aed448bc167a9f27558d7,
+  notificationPrefab: {fileID: 4566480996242977870, guid: 3fafbaeb1d1cad04b93d0de68213ca71,
     type: 3}
   repeat: 0
   newNotification: 0
