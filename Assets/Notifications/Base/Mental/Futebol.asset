@@ -36,11 +36,11 @@ MonoBehaviour:
   - typeNotification: 1
     value: 0
   - typeNotification: 0
-    value: 5
+    value: -5
   - typeNotification: 2
-    value: 10
-  - typeNotification: 3
     value: 0
+  - typeNotification: 3
+    value: 10
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0
