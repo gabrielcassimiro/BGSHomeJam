@@ -40,6 +40,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private Animator smartphoneAnim;
     [SerializeField] private List<Sprite> endGameSprites;
     [SerializeField] private Image endGameImage;
+    public Image creditsImage;
     [Header("Social Status")] public bool isDating = false;
     public bool isWorking = false;
     public bool isStudying = false;
@@ -91,38 +92,40 @@ public class GameController : MonoBehaviour
 
     public void NewNotification(NotificationObject notificationObject = null)
     {
-        if (PlayGame)
+        foreach (var stat in playerStatus)
         {
-            if (CheckStatusOfGame())
+            if (stat.Value < 1)
             {
-                countToWinGame++;
+                GameOver();
+                Debug.Log("GameOver");
+                break;
             }
+        }
+        if (CheckStatusOfGame())
+        {
+            countToWinGame++;
+        }
 
-            if (countToWinGame <= 5)
+        if (countToWinGame <= 5)
+        {
+            DaysManager();
+            if (!notificationObject)
             {
-                DaysManager();
-                if (!notificationObject)
-                {
-                    var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
-                    var go = Instantiate(notification.notificationPrefab, notificationParent);
-                    var prefab = go.GetComponent<NotificationPrefab>();
-                    prefab.Init(notification, CallEnumerator, NewSpecificNotification);
-                }
-                else
-                {
-                    var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
-                    var prefab = go.GetComponent<NotificationPrefab>();
-                    prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
-                }
+                var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
+                var go = Instantiate(notification.notificationPrefab, notificationParent);
+                var prefab = go.GetComponent<NotificationPrefab>();
+                prefab.Init(notification, CallEnumerator, NewSpecificNotification);
             }
             else
             {
-                WinMatch();
+                var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
+                var prefab = go.GetComponent<NotificationPrefab>();
+                prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
             }
         }
         else
         {
-            Debug.Log("GameOver");
+            WinMatch();
         }
     }
 

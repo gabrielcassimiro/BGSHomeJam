@@ -23,6 +23,8 @@ public class MainMenu : MonoBehaviour
 
     private void Credits()
     {
+        GameController.Instance.creditsImage.gameObject.SetActive(true);
+        Destroy(gameObject);
     }
 
     private void QuitGame()
