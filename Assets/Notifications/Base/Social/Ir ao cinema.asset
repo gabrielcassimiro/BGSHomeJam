@@ -17,7 +17,7 @@ MonoBehaviour:
   messageNotification: Ir ao cinema com os amigos
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
-  repeat: 0
+  repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
   textFirstOption: Relaxar

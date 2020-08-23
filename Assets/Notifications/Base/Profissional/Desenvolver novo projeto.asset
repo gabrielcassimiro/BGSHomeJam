@@ -10,37 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Jogar Online
+  m_Name: Desenvolver novo projeto
   m_EditorClassIdentifier: 
-  typeNotification: 0
+  typeNotification: 3
   titleNotification: 
-  messageNotification: Jogar online - Call com o amigo
-  notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
-    type: 3}
-  repeat: 1
-  newNotification: 0
-  newNotificationObject: {fileID: 0}
-  textFirstOption: "Voc\xEA fica feliz, mas n\xE3o descansa"
+  messageNotification: 
+  notificationPrefab: {fileID: 0}
+  repeat: 0
+  newNotification: 1
+  newNotificationObject: {fileID: 11400000, guid: f5bc0dcade2c81345a89f4c12f4327f2,
+    type: 2}
+  textFirstOption: "Desenvolve sozinho, tem maior press\xE3o, mas maior reconhecimento"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 10
-  - typeNotification: 0
-    value: 10
-  - typeNotification: 2
     value: -10
-  - typeNotification: 3
+  - typeNotification: 0
     value: 0
+  - typeNotification: 2
+    value: 0
+  - typeNotification: 3
+    value: 20
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o joga para descansar"
+  textSecondOption: Desenvolve em grupo e aprende muita coisa
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
-  - typeNotification: 0
-    value: -10
-  - typeNotification: 2
     value: 10
+  - typeNotification: 0
+    value: 10
+  - typeNotification: 2
+    value: 5
   - typeNotification: 3
-    value: 0
+    value: 5
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

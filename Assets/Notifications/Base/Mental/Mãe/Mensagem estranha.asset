@@ -10,37 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Jogar Online
+  m_Name: Mensagem estranha
   m_EditorClassIdentifier: 
   typeNotification: 0
-  titleNotification: 
-  messageNotification: Jogar online - Call com o amigo
+  titleNotification: "M\xE3e(2)"
+  messageNotification: "Bom dia, filho! A m\xE3e est\xE1 preocupada, o que est\xE1
+    acontecendo?"
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
-  repeat: 1
-  newNotification: 0
-  newNotificationObject: {fileID: 0}
-  textFirstOption: "Voc\xEA fica feliz, mas n\xE3o descansa"
+  repeat: 0
+  newNotification: 1
+  newNotificationObject: {fileID: 11400000, guid: 1f60fc8fe01a0c94bbf3a4f46528237f,
+    type: 2}
+  textFirstOption: "Oi m\xE3e! Me desculpa a demora, te ligo depois. Amo voc\xEA!"
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
   - typeNotification: 0
-    value: 10
+    value: 5
   - typeNotification: 2
-    value: -10
+    value: 0
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o joga para descansar"
+  textSecondOption: "Oi m\xE3e! To sem tempo por causa do trabalho."
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0
   - typeNotification: 0
-    value: -10
+    value: -5
   - typeNotification: 2
-    value: 10
-  - typeNotification: 3
     value: 0
+  - typeNotification: 3
+    value: 5
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

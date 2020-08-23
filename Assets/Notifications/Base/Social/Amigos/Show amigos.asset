@@ -10,38 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Jogar Online
+  m_Name: Show amigos
   m_EditorClassIdentifier: 
   typeNotification: 0
   titleNotification: 
-  messageNotification: Jogar online - Call com o amigo
+  messageNotification: "Dessa vez voc\xEA disse que ia."
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
-  repeat: 1
+  repeat: 0
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Voc\xEA fica feliz, mas n\xE3o descansa"
+  textFirstOption: "Falei que ia, s\xF3 bora!"
   changeStatusFirstOption:
   - typeNotification: 1
-    value: 10
+    value: 5
   - typeNotification: 0
-    value: 10
+    value: 15
   - typeNotification: 2
-    value: -10
+    value: -5
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o joga para descansar"
+  textSecondOption: "Putz, n\xE3o rola! Tenho trabalho amanh\xE3."
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0
   - typeNotification: 0
     value: -10
   - typeNotification: 2
-    value: 10
-  - typeNotification: 3
     value: 0
-  sequenceSecondOption: {fileID: 0}
+  - typeNotification: 3
+    value: 5
+  sequenceSecondOption: {fileID: 11400000, guid: 02ab8431267034141a6cb57dc689ac85,
+    type: 2}
   affectingDating: 0
   datingStatus: 0
   affectWork: 0

@@ -25,22 +25,22 @@ MonoBehaviour:
   - typeNotification: 1
     value: 0
   - typeNotification: 0
-    value: 0
+    value: 10
   - typeNotification: 2
     value: 0
-  - typeNotification: 0
-    value: 0
+  - typeNotification: 3
+    value: 10
   sequenceFirstOption: {fileID: 0}
   textSecondOption: "Responde que n\xE3o \xE9 seu e deixa para l\xE1"
   changeStatusSecondOption:
-  - typeNotification: 0
+  - typeNotification: 1
     value: 0
   - typeNotification: 0
     value: 0
-  - typeNotification: 0
+  - typeNotification: 2
     value: 0
-  - typeNotification: 0
-    value: 0
+  - typeNotification: 3
+    value: 10
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

@@ -10,33 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c6beda18e4dd045a7005698785a05e, type: 3}
-  m_Name: Jogar Online
+  m_Name: Cupomzinho
   m_EditorClassIdentifier: 
   typeNotification: 0
   titleNotification: 
-  messageNotification: Jogar online - Call com o amigo
+  messageNotification: CHEGOU CUPOM!
   notificationPrefab: {fileID: 7631294725897699615, guid: f1757cacc9ace7040b55d096a4391773,
     type: 3}
   repeat: 1
   newNotification: 0
   newNotificationObject: {fileID: 0}
-  textFirstOption: "Voc\xEA fica feliz, mas n\xE3o descansa"
+  textFirstOption: "Sua mente agradece pelo lanch\xE3o, mas seu f\xEDsico n\xE3o"
   changeStatusFirstOption:
   - typeNotification: 1
     value: 10
   - typeNotification: 0
-    value: 10
+    value: 0
   - typeNotification: 2
-    value: -10
+    value: -5
   - typeNotification: 3
     value: 0
   sequenceFirstOption: {fileID: 0}
-  textSecondOption: "N\xE3o joga para descansar"
+  textSecondOption: Sua batata doce com frango te aguarda
   changeStatusSecondOption:
   - typeNotification: 1
     value: 0
   - typeNotification: 0
-    value: -10
+    value: 0
   - typeNotification: 2
     value: 10
   - typeNotification: 3
