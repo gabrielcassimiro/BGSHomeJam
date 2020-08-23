@@ -28,8 +28,6 @@ MonoBehaviour:
     value: 15
   - typeNotification: 2
     value: -5
-  - typeNotification: 3
-    value: 0
   sequenceFirstOption: {fileID: 0}
   textSecondOption: "Putz, n\xE3o rola! Tenho trabalho amanh\xE3."
   changeStatusSecondOption:

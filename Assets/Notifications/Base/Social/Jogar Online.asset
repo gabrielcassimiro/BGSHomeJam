@@ -28,19 +28,15 @@ MonoBehaviour:
     value: 10
   - typeNotification: 2
     value: -10
-  - typeNotification: 3
-    value: 0
   sequenceFirstOption: {fileID: 0}
   textSecondOption: "Hoje n\xE3o d\xE1. (N\xE3o joga para descansar)"
   changeStatusSecondOption:
   - typeNotification: 1
-    value: 0
+    value: 10
   - typeNotification: 0
     value: -10
   - typeNotification: 2
-    value: 10
-  - typeNotification: 3
-    value: 0
+    value: 5
   sequenceSecondOption: {fileID: 0}
   affectingDating: 0
   datingStatus: 0

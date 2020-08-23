@@ -29,7 +29,7 @@ MonoBehaviour:
   - typeNotification: 2
     value: -10
   - typeNotification: 3
-    value: 0
+    value: -10
   sequenceFirstOption: {fileID: 0}
   textSecondOption: Usa desculpa que tem muita coisa para fazer e fica em casa
   changeStatusSecondOption:
