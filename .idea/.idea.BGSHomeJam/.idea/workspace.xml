@@ -38,8 +38,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StatusManager.cs" />
         <option value="$PROJECT_DIR$/Assets/SFX/PlayAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NotificationPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -105,7 +105,7 @@
       <workItem from="1598088428014" duration="33298000" />
       <workItem from="1598175134018" duration="10796000" />
       <workItem from="1598201513036" duration="4102000" />
-      <workItem from="1598211711198" duration="5235000" />
+      <workItem from="1598211711198" duration="6220000" />
     </task>
     <servers />
   </component>

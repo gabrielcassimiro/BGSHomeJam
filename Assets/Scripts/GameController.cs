@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Enums;
 using Scriptable;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -113,31 +112,32 @@ public class GameController : MonoBehaviour
         if (PlayGame)
         {
             if (CheckStatusOfGame())
-                    {
-                        countToWinGame++;
-                    }
-            
-                    if (countToWinGame <= 5)
-                    {
-                        DaysManager();
-                        if (!notificationObject)
-                        {
-                            var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
-                            var go = Instantiate(notification.notificationPrefab, notificationParent);
-                            var prefab = go.GetComponent<NotificationPrefab>();
-                            prefab.Init(notification, CallEnumerator, NewSpecificNotification);
-                        }
-                        else
-                        {
-                            var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
-                            var prefab = go.GetComponent<NotificationPrefab>();
-                            prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
-                        }
-                    }
-                    else
-                    {
-                        WinMatch();
-                    }
+            {
+                countToWinGame++;
+            }
+
+            if (countToWinGame <= 5)
+            {
+                DaysManager();
+                if (!notificationObject)
+                {
+                    var notification = listNotifications.GetNotification(isDating, isWorking, isStudying);
+                    Debug.Log(notification.titleNotification);
+                    var go = Instantiate(notification.notificationPrefab, notificationParent);
+                    var prefab = go.GetComponent<NotificationPrefab>();
+                    prefab.Init(notification, CallEnumerator, NewSpecificNotification);
+                }
+                else
+                {
+                    var go = Instantiate(notificationObject.notificationPrefab, notificationParent);
+                    var prefab = go.GetComponent<NotificationPrefab>();
+                    prefab.Init(notificationObject, CallEnumerator, NewSpecificNotification);
+                }
+            }
+            else
+            {
+                WinMatch();
+            }
         }
     }
 

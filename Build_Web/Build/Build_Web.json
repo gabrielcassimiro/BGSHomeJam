@@ -1,7 +1,7 @@
 {
 "companyName": "CATEDAN Games",
 "productName": "VOCÊ",
-"productVersion": "0.1",
+"productVersion": "1",
 "dataUrl": "Build_Web.data.unityweb",
 "wasmCodeUrl": "Build_Web.wasm.code.unityweb",
 "wasmFrameworkUrl": "Build_Web.wasm.framework.unityweb",
